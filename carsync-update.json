@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1007,
-  "version": "0.10.7",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.7/CarSync_0.10.7.apk",
-  "notes": "本機播放器改用可定位的本機 Range 讀取，平板每次最多預讀 256 KiB，不複製整部影片。車機最多等候平板 2 秒，單台平板緩衝恢復後追上主機。版本／更新保留入口但不顯示網址，新增 App 內下載進度、重試、校驗與安裝。長影片與車機／平板相容性仍需實機驗證。",
-  "sha256": "a3c7712adcc0c3a66f2dc4ad2af9c4abe9b591fa35fcc03cc205cdfbddccc054"
+  "release": 1008,
+  "version": "0.10.8",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.8/CarSync_0.10.8.apk",
+  "notes": "本機播放器改用可定位的本機 Range 讀取，平板每次最多預讀 256 KiB，不複製整部影片。車機最多等候平板 2 秒，單台平板緩衝恢復後追上主機。版本／更新保留入口但不顯示網址，新增 App 內下載進度、重試、校驗與安裝。長影片與車機／平板相容性仍需實機驗證。 主機緩衝時先靜音，資料補足後再暫停對齊，避免中途暫停阻斷緩衝。",
+  "sha256": "cb7b8718e34320a1725480fca40b8ad8214c1f1a70a954d1f7a9e000019da260"
 }
