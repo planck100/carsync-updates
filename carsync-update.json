@@ -3,5 +3,6 @@
   "release": 1005,
   "version": "0.10.5",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.5/CarSync_0.10.5_RC1.apk",
-  "notes": "內建影片選取、多選清單、更新檢查。車機與平板請覆蓋安裝。"
+  "notes": "內建影片選取、多選清單、更新檢查。桌面名稱維持 CarSync。長影片 PREPARE_TIMEOUT 尚未確認修復；車機、平板及熱點功能仍需實機驗證。",
+  "sha256": "be3e72f5b7d70230fe2f82028300188b5f175bd21cab9f7fa277e5362f5e6f2e"
 }
