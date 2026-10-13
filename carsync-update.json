@@ -1,0 +1,7 @@
+{
+  "package": "app.carsync.mobile.display",
+  "release": 1005,
+  "version": "0.10.5",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.5/CarSync_0.10.5_RC1.apk",
+  "notes": "內建影片選取、多選清單、更新檢查。車機與平板請覆蓋安裝。"
+}
