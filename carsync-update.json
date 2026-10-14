@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1019,
-  "version": "0.10.19",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.19/CarSync_0.10.19.apk",
-  "notes": "改善小米平板配對前 PAIR_BIND 相容性：系統預設已是相同且非受限 Wi-Fi 時，以本機 Wi-Fi 位址建立一般連線，避免多餘的指定網路操作；其他路徑保留明確綁定，不在權限拒絕後切換路徑。連線自檢區分網路綁定與 TCP 連線失敗，顯示採用路徑。原簽章、完整程式庫與底層版本不變。",
-  "sha256": "d6aa4936e8c6cd3c128b19f51c1c5690e0229c8741c54a65c13d25fa095d8a1e"
+  "release": 1020,
+  "version": "0.10.20",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.20/CarSync_0.10.20.apk",
+  "notes": "修正 YouTube 平板已連線卻一直校正而遮住影片：同一影片與播放狀態連續確認後即可顯示，進度另行校正。緩衝期間停止跳轉；跳轉後等待至少 6 秒，後續播放進度差超過 2 秒才重新定位。仍要求有效車機資訊、影片身分一致與全螢幕，不顯示選片介面。保留 0.10.19 網路相容修正、原簽章與完整程式庫。",
+  "sha256": "2efdde9df3b241b9743e217eb04ffdca5a5df8d403de39a97c48f77020c467aa"
 }
