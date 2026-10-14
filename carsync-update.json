@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1022,
-  "version": "0.10.22",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.22/CarSync_0.10.22.apk",
-  "notes": "改善車機暫停後平板控制未確認：送出暫停後保留確認時間，原生狀態不可用時以已接受暫停指令加持續停止的進度作備援；進度再次前進、換片或斷線會撤銷判斷。控制重試間隔延長至 5 秒，避免快速重複切換。控制失敗保留已確認同一影片畫面並顯示未確認提示，不假稱同步成功。",
-  "sha256": "29507248258aad3362425cb874538f0b49c82c386d7e6781788ec125b7601f8f"
+  "release": 1023,
+  "version": "0.10.23",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.23/CarSync_0.10.23.apk",
+  "notes": "包含 0.10.22 暫停控制與確認修正。新增 YouTube 車機退出遮罩：車機切到背景、退出播放頁或縮成迷你播放器時，不再發布有效影片身分，平板遮住畫面並等待車機返回；返回有效播放頁後重新確認影片。控制失敗保留影片的行為只適用於仍有效的車機播放頁。",
+  "sha256": "d2d42e4e6697c0659aeaeac154933b7c01d2c9063ccf66e5f6da29fccd5ec6f1"
 }
