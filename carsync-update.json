@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1024,
-  "version": "0.10.24",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.24/CarSync_0.10.24.apk",
-  "notes": "修正車機暫停後平板重播同一小段：暫停指令優先，尚未取得原生暫停確認時禁止定位；確認後同一暫停目標最多定位一次，即使被拒絕也不反覆跳回。恢復播放後照常校正。原生狀態缺失時，連續前進進度優先於可能過期的按鈕文字；控制未確認時輪替已知按鈕入口重試。保留車機退出遮罩。",
-  "sha256": "c29929182bde0f66932b32cedc74bd286e005072790f4f59666fef3b3ffe00aa"
+  "release": 1025,
+  "version": "0.10.25",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.25/CarSync_0.10.25.apk",
+  "notes": "接收架構改為投影模式：平板不再各自開啟 YouTube，也不再讀取車機本地影片。車機在全螢幕播放時，以 GPU 套用唯一一組裁切設定，再由 H.264 硬體編碼一次並分送已配對平板；各平板自行選擇完整、填滿或拉伸比例。新增數值裁切介面、智慧偵測、即時保留範圍與輸出尺寸；退出裁切模式後不顯示裁切資訊。車機退出全螢幕時停止送畫面並遮住平板。",
+  "sha256": "b0f2cae2735f47ad3a76fd5f4b80f6dd565efb83eb3d0187db3949b359c578b8"
 }
