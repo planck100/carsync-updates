@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1017,
-  "version": "0.10.17",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.17/CarSync_0.10.17.apk",
-  "notes": "播放頁新增獨立「返回 YouTube」按鈕，保留進度並停止本機同步。設定統一至右上角，移除重複入口；小尺寸畫面仍可從設定操作所有播放功能。診斷頁只保留一個關閉，固定複製／匯出操作列並讓內容獨立捲動。維持原簽章、完整程式庫與 YouTube 底層版本。",
-  "sha256": "8bc0b23647b17b1313623d3194acd384067a6433033aaf1cc934e5159c556156"
+  "release": 1018,
+  "version": "0.10.18",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.18/CarSync_0.10.18.apk",
+  "notes": "連線搜尋容錯：UDP 失敗時等待 NSD 備援搜尋，介面列舉失敗仍嘗試有限廣播；已配對車機使用新搜尋到的 IP。增加 UDP 與配對各階段及錯誤分類，區分連線中斷與未批准配對。保留完整程式庫、原簽章與底層版本。本版未處理慢車機啟動黑畫面。 平板 YouTube 等待畫面顯示實際階段，診斷新增車機／平板播放狀態與進度；平板模式不再受主機自動全螢幕偏好限制。",
+  "sha256": "1bc48ffd28c0812dbe21e9934736cf7d70425ff04721cb512115737446aec34a"
 }
