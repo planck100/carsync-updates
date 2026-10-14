@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1010,
-  "version": "0.10.10",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.10/CarSync_0.10.10.apk",
-  "notes": "撤回 APK 容量精簡，恢復基底 APK 的全部原生程式庫並逐一驗證內容一致。保留更新入口、隱藏網址、內外部下載與大檔案同步功能。YouTube 播放、平板啟動及連線仍待實機確認。",
-  "sha256": "670e35de784ae1c7e1632766ab32381e250cb0245e47c507a25198706f8457d7"
+  "release": 1011,
+  "version": "0.10.11",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.11/CarSync_0.10.11.apk",
+  "notes": "恢復 Morphe／YouTube 底層版本名稱 21.20.405，與 CarSync 更新版本分開，排除先前版本名稱改寫造成的相容性風險。維持完整原生程式庫、原簽章與更新功能。404 是否解除、平板閃退及連線問題仍需實機確認。",
+  "sha256": "68bd5d8fd66201fcd0c6bd16df199632c6e5c4ac62de6a3a08163bfcf944de3b"
 }
