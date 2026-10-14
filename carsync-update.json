@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1021,
-  "version": "0.10.21",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.21/CarSync_0.10.21.apk",
-  "notes": "修正 YouTube 播放狀態回傳 null 導致平板永久遮罩：原始狀態未知時，使用播放器播放／暫停按鈕語意，或連續合理進度變化作為備援。進度停止不直接判為暫停；定位跳躍不當成播放。相同影片與有效進度連續確認後，即使狀態讀取不可用仍可顯示已載入畫面，保留全螢幕、身分與新鮮資料要求。診斷新增原始狀態與判定來源。",
-  "sha256": "bcdec89c3efb1884d06e22847bbab408627e84eee973930bc8c42d29f4048cff"
+  "release": 1022,
+  "version": "0.10.22",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.22/CarSync_0.10.22.apk",
+  "notes": "改善車機暫停後平板控制未確認：送出暫停後保留確認時間，原生狀態不可用時以已接受暫停指令加持續停止的進度作備援；進度再次前進、換片或斷線會撤銷判斷。控制重試間隔延長至 5 秒，避免快速重複切換。控制失敗保留已確認同一影片畫面並顯示未確認提示，不假稱同步成功。",
+  "sha256": "29507248258aad3362425cb874538f0b49c82c386d7e6781788ec125b7601f8f"
 }
