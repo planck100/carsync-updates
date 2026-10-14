@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1018,
-  "version": "0.10.18",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.18/CarSync_0.10.18.apk",
-  "notes": "連線搜尋容錯：UDP 失敗時等待 NSD 備援搜尋，介面列舉失敗仍嘗試有限廣播；已配對車機使用新搜尋到的 IP。增加 UDP 與配對各階段及錯誤分類，區分連線中斷與未批准配對。保留完整程式庫、原簽章與底層版本。本版未處理慢車機啟動黑畫面。 平板 YouTube 等待畫面顯示實際階段，診斷新增車機／平板播放狀態與進度；平板模式不再受主機自動全螢幕偏好限制。",
-  "sha256": "1bc48ffd28c0812dbe21e9934736cf7d70425ff04721cb512115737446aec34a"
+  "release": 1019,
+  "version": "0.10.19",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.19/CarSync_0.10.19.apk",
+  "notes": "改善小米平板配對前 PAIR_BIND 相容性：系統預設已是相同且非受限 Wi-Fi 時，以本機 Wi-Fi 位址建立一般連線，避免多餘的指定網路操作；其他路徑保留明確綁定，不在權限拒絕後切換路徑。連線自檢區分網路綁定與 TCP 連線失敗，顯示採用路徑。原簽章、完整程式庫與底層版本不變。",
+  "sha256": "d6aa4936e8c6cd3c128b19f51c1c5690e0229c8741c54a65c13d25fa095d8a1e"
 }
