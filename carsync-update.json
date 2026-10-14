@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1025,
-  "version": "0.10.25",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.25/CarSync_0.10.25.apk",
-  "notes": "接收架構改為投影模式：平板不再各自開啟 YouTube，也不再讀取車機本地影片。車機在全螢幕播放時，以 GPU 套用唯一一組裁切設定，再由 H.264 硬體編碼一次並分送已配對平板；各平板自行選擇完整、填滿或拉伸比例。新增數值裁切介面、智慧偵測、即時保留範圍與輸出尺寸；退出裁切模式後不顯示裁切資訊。車機退出全螢幕時停止送畫面並遮住平板。",
-  "sha256": "b0f2cae2735f47ad3a76fd5f4b80f6dd565efb83eb3d0187db3949b359c578b8"
+  "release": 1026,
+  "version": "0.10.26",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.26/CarSync_0.10.26.apk",
+  "notes": "修正 0.10.25 選擇平板模式後閃退。平板入口只建立獨立安全覆蓋層，不再修改 YouTube 原始視圖樹；成功連接車機後才延遲建立 TextureView 與投影 Surface。Surface、返回手勢及播放器建立失敗均降級為畫面錯誤，不再終止程序。保留車機 GPU 裁切、單次 H.264 硬體編碼與多平板投影。",
+  "sha256": "fbe9733ba6743f1afe2402a81b52da3231088b47e892155a99b8137e20341345"
 }
