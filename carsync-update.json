@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1013,
-  "version": "0.10.13",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.13/CarSync_0.10.13.apk",
-  "notes": "新增連線自我檢查（區域網路、搜尋、TCP、車機身分與同步狀態）；網路切換時依已配對身分重新搜尋 IP，驗證成功才更新位址；新增已配對設備管理、移除與即時撤銷連線。平板可忘記車機並重新配對。車機和平板皆請更新。保留原底層版本 21.20.405、完整程式庫及原簽章。實機效果待驗證。",
-  "sha256": "8ee08d2a9a4ef7356a8725840bd7b26ad7c680af9de34d5da621ea59ed078531"
+  "release": 1014,
+  "version": "0.10.14",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.14/CarSync_0.10.14.apk",
+  "notes": "介面改為深色圓角按鈕與薄荷綠主要操作，連線首頁簡化，手動參數移至進階設定，播放器隱藏解碼技術標籤。新增有限次數的播放停滯自動恢復、本機播放器重建及平板 YouTube 重新載入；喚醒時重新確認失效連線；本機影片重連沿用最新進度、音軌及字幕。新增每台平板的傳輸資源限制與閒置清理、前景同步電源保護、前次執行狀態與 Java 閃退診斷。每個恢復週期最多三次，穩定播放後重設；來源失效仍需人工處理。車機與平板皆請更新。保留 21.20.405 底層版本、完整程式庫及原簽章；實機長時間穩定性待驗證。",
+  "sha256": "e3de955a66e2a1825ec28f122d36e9f6267ccf2208075add974a973dcb4e69cb"
 }
