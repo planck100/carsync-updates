@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1016,
-  "version": "0.10.16",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.16/CarSync_0.10.16.apk",
-  "notes": "車機與平板首頁改為向量圖示＋短標籤，自動依視窗寬度與字體大小排列。修正底部操作按鈕擠字與裁切：返回／停止使用圖示短標籤，空間不足自動直排，按內容高度顯示。保留長按功能提示及無障礙名稱。沿用 0.10.15 同步與恢復機制，維持底層版本、完整程式庫與原簽章。",
-  "sha256": "8968cb5d89547739da6c490b43884600d09c561d2208229626e9cd53e0b31d55"
+  "release": 1017,
+  "version": "0.10.17",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.17/CarSync_0.10.17.apk",
+  "notes": "播放頁新增獨立「返回 YouTube」按鈕，保留進度並停止本機同步。設定統一至右上角，移除重複入口；小尺寸畫面仍可從設定操作所有播放功能。診斷頁只保留一個關閉，固定複製／匯出操作列並讓內容獨立捲動。維持原簽章、完整程式庫與 YouTube 底層版本。",
+  "sha256": "8bc0b23647b17b1313623d3194acd384067a6433033aaf1cc934e5159c556156"
 }
