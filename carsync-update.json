@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1011,
-  "version": "0.10.11",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.11/CarSync_0.10.11.apk",
-  "notes": "恢復 Morphe／YouTube 底層版本名稱 21.20.405，與 CarSync 更新版本分開，排除先前版本名稱改寫造成的相容性風險。維持完整原生程式庫、原簽章與更新功能。404 是否解除、平板閃退及連線問題仍需實機確認。",
-  "sha256": "68bd5d8fd66201fcd0c6bd16df199632c6e5c4ac62de6a3a08163bfcf944de3b"
+  "release": 1012,
+  "version": "0.10.12",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.12/CarSync_0.10.12.apk",
+  "notes": "新增區域網自動搜尋（Android NSD＋UDP 備援）；首次在車機按允許即可配對，保存每台平板專屬憑證，之後自動重連及重新搜尋變動的 IP。保留手動 IP／配對碼入口。補上握手階段與斷線錯誤類型診斷。車機與平板皆需更新。維持 21.20.405 底層版本、完整程式庫及原簽章；實機連線問題仍待驗證。",
+  "sha256": "36a202d8718dc383e754e93a975a8b22e44dcdba8d506595d7faef28c0c2ade2"
 }
