@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1009,
-  "version": "0.10.9",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.9/CarSync_0.10.9.apk",
-  "notes": "保留版本／更新入口並隱藏網址。App 內下載啟動失敗或無法開啟安裝時，直接改用外部下載；下載失敗、校驗失敗於更新視窗前景時切換一次，避免背景打斷播放。新增常駐「外部下載／安裝」按鈕。保留大檔案 Range 讀取、緩衝同步與 ARM 精簡版。安裝需使用者確認；設備相容性待實機驗證。",
-  "sha256": "4cda49ff3b58f8d011948e8d98efdeca6f6a80682b6974c084a33b86a29386a3"
+  "release": 1010,
+  "version": "0.10.10",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.10/CarSync_0.10.10.apk",
+  "notes": "撤回 APK 容量精簡，恢復基底 APK 的全部原生程式庫並逐一驗證內容一致。保留更新入口、隱藏網址、內外部下載與大檔案同步功能。YouTube 播放、平板啟動及連線仍待實機確認。",
+  "sha256": "670e35de784ae1c7e1632766ab32381e250cb0245e47c507a25198706f8457d7"
 }
