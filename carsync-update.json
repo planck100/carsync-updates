@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1012,
-  "version": "0.10.12",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.12/CarSync_0.10.12.apk",
-  "notes": "新增區域網自動搜尋（Android NSD＋UDP 備援）；首次在車機按允許即可配對，保存每台平板專屬憑證，之後自動重連及重新搜尋變動的 IP。保留手動 IP／配對碼入口。補上握手階段與斷線錯誤類型診斷。車機與平板皆需更新。維持 21.20.405 底層版本、完整程式庫及原簽章；實機連線問題仍待驗證。",
-  "sha256": "36a202d8718dc383e754e93a975a8b22e44dcdba8d506595d7faef28c0c2ade2"
+  "release": 1013,
+  "version": "0.10.13",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.13/CarSync_0.10.13.apk",
+  "notes": "新增連線自我檢查（區域網路、搜尋、TCP、車機身分與同步狀態）；網路切換時依已配對身分重新搜尋 IP，驗證成功才更新位址；新增已配對設備管理、移除與即時撤銷連線。平板可忘記車機並重新配對。車機和平板皆請更新。保留原底層版本 21.20.405、完整程式庫及原簽章。實機效果待驗證。",
+  "sha256": "8ee08d2a9a4ef7356a8725840bd7b26ad7c680af9de34d5da621ea59ed078531"
 }
