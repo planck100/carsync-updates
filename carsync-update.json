@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1026,
-  "version": "0.10.26",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.26/CarSync_0.10.26.apk",
-  "notes": "修正 0.10.25 選擇平板模式後閃退。平板入口只建立獨立安全覆蓋層，不再修改 YouTube 原始視圖樹；成功連接車機後才延遲建立 TextureView 與投影 Surface。Surface、返回手勢及播放器建立失敗均降級為畫面錯誤，不再終止程序。保留車機 GPU 裁切、單次 H.264 硬體編碼與多平板投影。",
-  "sha256": "fbe9733ba6743f1afe2402a81b52da3231088b47e892155a99b8137e20341345"
+  "release": 1027,
+  "version": "0.10.27",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.27/CarSync_0.10.27.apk",
+  "notes": "修正平板已連上車機但投影持續顯示緩衝中、畫面為 0×0 的問題。投影影像通道改用與控制通道相同的 Wi-Fi 路由策略，避免 Android 36、小米 HyperOS 拒絕 bindSocket；投影授權改為以隨機連線密鑰驗證，不再依賴兩條 TCP 連線的來源 IP 必須相同。新增投影連線階段、Surface、重連與伺服器計數診斷。",
+  "sha256": "0a6789be0e6b6fbd96780f8f7b52bd5e9c24a37be235daff147079e018dd3ac1"
 }
