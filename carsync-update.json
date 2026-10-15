@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1028,
-  "version": "0.10.28",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.28/CarSync_0.10.28.apk",
-  "notes": "修正部分 Android 13 平板無法建立 TextureView，導致 ProjectionRxSurface=false、投影一直緩衝的問題。平板解碼畫面改用相容性較高的 SurfaceView，保留完整顯示、填滿螢幕與拉伸模式，並新增影像容器錯誤細節診斷。",
-  "sha256": "4b8ff1af0d84d58a2e28bd5bdc2d18e430ad4af01817c46fefe06e968ea13162"
+  "release": 1029,
+  "version": "0.10.29",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.29/CarSync_0.10.29.apk",
+  "notes": "修正平板投影顯示 STREAMING 但仍為黑畫面的問題：解碼前可靠傳送 H.264 SPS/PPS，所有接收端從新關鍵幀開始，並等待第一個實際解碼畫面後才解除狀態遮罩。恢復連線、等待首幀、緩衝與重連提示；超過 3 秒無影格會自動重建串流。診斷新增接收端實際 FPS、輸入／輸出影格、上一幀時間及傳送端關鍵幀計數。平板連線設定可直接進入，不再要求本機配對碼；新車機配對仍須由車機允許。",
+  "sha256": "3a1e88e9f51a4f20f12368b3df1f4ddc398e3f50d5b7f0b8d257d0acb064bd9b"
 }
