@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1030,
-  "version": "0.10.30",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.30/CarSync_0.10.30.apk",
-  "notes": "投影核心改為 MediaProjection 直接輸入硬體 H.264 編碼器，移除在車機輸出全黑的 SurfaceTexture／OpenGL 中轉層。車機以完整螢幕比例直接硬體編碼，裁切範圍改由串流中繼資料傳給各平板，各平板再依完整、填滿或拉伸模式顯示框內畫面。限制編碼器最高 30 FPS、降低車機 GPU 負擔，並修正接收端診斷解析度顯示。此版採用新投影協定，車機與平板均須更新。",
-  "sha256": "b0ad4d3e256157d57009274e0e629503593a3af9d2806be545df800d3ad3908e"
+  "release": 1031,
+  "version": "0.10.31",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.31/CarSync_0.10.31.apk",
+  "notes": "提升投影清晰度：1920 像素以下的車機採原生解析度硬體傳送，大螢幕等比例限制在 1920×1080，並依像素量自動使用約 4–9 Mbps 碼率。修正先前 1280×576 導致裁切後有效畫面僅約 1052×576的問題；裁切仍只在平板顯示端套用一次。另修正投影裁切設定頁內容過寬及按鈕文字被截斷。",
+  "sha256": "4b5b6278f34217ed8e6be7101db08f10a3d6ccc22c5c0f76357fa6342fc18234"
 }
