@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1029,
-  "version": "0.10.29",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.29/CarSync_0.10.29.apk",
-  "notes": "修正平板投影顯示 STREAMING 但仍為黑畫面的問題：解碼前可靠傳送 H.264 SPS/PPS，所有接收端從新關鍵幀開始，並等待第一個實際解碼畫面後才解除狀態遮罩。恢復連線、等待首幀、緩衝與重連提示；超過 3 秒無影格會自動重建串流。診斷新增接收端實際 FPS、輸入／輸出影格、上一幀時間及傳送端關鍵幀計數。平板連線設定可直接進入，不再要求本機配對碼；新車機配對仍須由車機允許。",
-  "sha256": "3a1e88e9f51a4f20f12368b3df1f4ddc398e3f50d5b7f0b8d257d0acb064bd9b"
+  "release": 1030,
+  "version": "0.10.30",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.30/CarSync_0.10.30.apk",
+  "notes": "投影核心改為 MediaProjection 直接輸入硬體 H.264 編碼器，移除在車機輸出全黑的 SurfaceTexture／OpenGL 中轉層。車機以完整螢幕比例直接硬體編碼，裁切範圍改由串流中繼資料傳給各平板，各平板再依完整、填滿或拉伸模式顯示框內畫面。限制編碼器最高 30 FPS、降低車機 GPU 負擔，並修正接收端診斷解析度顯示。此版採用新投影協定，車機與平板均須更新。",
+  "sha256": "b0ad4d3e256157d57009274e0e629503593a3af9d2806be545df800d3ad3908e"
 }
