@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1036,
-  "version": "0.10.36",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.36/CarSync_0.10.36.apk",
-  "notes": "緊急穩定修正：撤回 0.10.35 在 UIS8581 上相容性不佳的 GPU 預裁切管線，修復車機閃退與畫面效果異常。恢復 0.10.34 已驗證的 MediaProjection 直接硬體編碼路徑，維持 1920×720、既有裁切、關鍵幀節流及連線穩定改善。建議所有已安裝 0.10.35 的車機與平板立即更新。",
-  "sha256": "909637ece8cd275ad771cc3c958a076fd3f4b842fbcc1a218ec3a3cd760a08a5"
+  "release": 1037,
+  "version": "0.10.37",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.37/CarSync_0.10.37.apk",
+  "notes": "新增通用投影編碼器檢測與選擇：列出車機所有 AVC 編碼器、硬體／原廠屬性、Surface、1920×720與30fps支援能力，並顯示目前實際FPS、碼率與丟幀。預設保留系統自動選擇，可指定其他硬體編碼器於下次投影生效；不可用時自動回退。同步優化TCP輸出，只在傳送佇列清空時flush，減少每影格系統呼叫。維持0.10.36穩定MediaProjection管線，不重新啟用GPU裁切。",
+  "sha256": "97c4e0f345f31692d1ac03c8065f902d934b3018a0345be61e5c61378721f8d9"
 }
