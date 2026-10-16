@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1035,
-  "version": "0.10.35",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.35/CarSync_0.10.35.apk",
-  "notes": "以 25 FPS 以上為投影目標。新增車機端 GPU 預裁切：1920×720 畫面先依設定裁掉左右黑邊，再以約 1280×720 送入硬體 H.264 編碼器，不再浪費效能編碼平板最終看不到的區域；維持 720 垂直解析度。加入低延遲、即時優先與 30 FPS 編碼提示，並延長關鍵幀間隔、忽略正常斷線的 Broken pipe。診斷新增 GPU_CROP 管線與 25+ FPS 目標。",
-  "sha256": "16dba854f74e41bbfd34938ec4fd17805c19a12c5d50ddb81954df00745052cc"
+  "release": 1036,
+  "version": "0.10.36",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.36/CarSync_0.10.36.apk",
+  "notes": "緊急穩定修正：撤回 0.10.35 在 UIS8581 上相容性不佳的 GPU 預裁切管線，修復車機閃退與畫面效果異常。恢復 0.10.34 已驗證的 MediaProjection 直接硬體編碼路徑，維持 1920×720、既有裁切、關鍵幀節流及連線穩定改善。建議所有已安裝 0.10.35 的車機與平板立即更新。",
+  "sha256": "909637ece8cd275ad771cc3c958a076fd3f4b842fbcc1a218ec3a3cd760a08a5"
 }
