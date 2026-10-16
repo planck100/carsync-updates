@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1033,
-  "version": "0.10.33",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.33/CarSync_0.10.33.apk",
-  "notes": "高畫質效能更新：保持 1920×720 與原碼率，不降低畫質。修正首次取得 H.264 設定時誤關閉接收端造成的一次 EOF 重連；每台平板影格佇列由 12 縮至 6，避免網路塞車累積延遲；接收端改用可擴充重用緩衝，減少逐幀記憶體配置與 GC。編碼輸出執行緒提高顯示優先級，多台平板的關鍵幀要求會合併。車機診斷新增實際輸出 FPS、Mbps、佇列深度與丟幀數。",
-  "sha256": "6db7e3afa35bc2d3b66cd1c20ec0bd19707561356cb6e87515ac04070426fa87"
+  "release": 1034,
+  "version": "0.10.34",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.34/CarSync_0.10.34.apk",
+  "notes": "修正車機正常播放時每次狀態輪詢都重複要求 H.264 關鍵幀，造成 UIS8581 編碼負擔及 FPS 降低。現在只在進入全螢幕、新平板連線或影格佇列真正溢位時要求關鍵幀；維持 1920×720、原碼率與既有裁切，不犧牲畫質。另避免離開全螢幕造成的正常 Broken pipe 被顯示為投影傳輸故障。",
+  "sha256": "f9f687ae1420362b7e58237c989e37c9fd1ea383754de3e25775ebd95c0aff50"
 }
