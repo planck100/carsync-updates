@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1038,
-  "version": "0.10.38",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.38/CarSync_0.10.38.apk",
-  "notes": "新增通用投影編碼器檢測與選擇：列出 AVC 編碼器的硬體、Surface、1920×720及30fps能力，顯示目前FPS、碼率與丟幀，並可指定下次投影使用的編碼器。若指定編碼器宣告支援但實際配置失敗，會自動回退系統硬體編碼器，避免黑畫面或投影停止。另降低逐影格TCP flush負擔；維持0.10.36穩定MediaProjection管線，不使用GPU預裁切。",
-  "sha256": "c3157d86061e92e1e1446be5b1d06837c2bcdb6d48b6699e8dbff4f704023b7b"
+  "release": 1039,
+  "version": "0.10.39",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.39/CarSync_0.10.39.apk",
+  "notes": "新增通用投影編碼器檢測與選擇：列出 AVC 編碼器的硬體、Surface、1920×720及30fps能力，顯示目前FPS、碼率與丟幀，並可指定下次投影使用的編碼器。指定編碼器若實際啟動失敗，會先完整釋放資源再回退系統硬體編碼器，避免黑畫面、資源占用或閃退。另降低逐影格TCP flush負擔；維持穩定MediaProjection管線，不使用GPU預裁切。",
+  "sha256": "3c2957bfc61f7e093674f5d47d07955232bb1d0a6d106ca5656b420587cba99d"
 }
