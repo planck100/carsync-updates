@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha6",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha6/CarSync_Standalone_1.0.0-alpha6.apk",
-  "sha256": "01ccca931e45420300ef52f4b60a88f3a5a9a995304b16a435f6aa962240c86c",
+  "sha256": "60d812498161c1c846c0912ba7e126d96dba1aa31c993907d2719dcdfe586f69",
   "size": 107224,
   "notes": "新增手機端自動智慧偵測黑邊：按鈕觸發多幀取樣、裁切預覽、四邊像素微調、重新偵測與全畫面輸出。確認後固定裁切，直接同步套用720p及1080p雙串流，不需重啟投影。暗場或來源尺寸變更時保留原設定。"
 }
