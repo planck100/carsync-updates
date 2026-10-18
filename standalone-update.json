@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha5",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha5/CarSync_Standalone_1.0.0-alpha5.apk",
-  "sha256": "17ce6d355a2ed77530cf7869339c3e376284e0a8105482336ea76015f17fa0e4",
-  "size": 94936,
-  "notes": "修正更新檢查失敗：改用免 API 限流的靜態更新資訊，並加入 CDN 與 GitHub Releases API 備援。現在會顯示 HTTP 錯誤原因、提供外部下載保底，且 App 內安裝前會驗證 APK 的 SHA-256。"
+  "version": "1.0.0-alpha6",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha6/CarSync_Standalone_1.0.0-alpha6.apk",
+  "sha256": "01ccca931e45420300ef52f4b60a88f3a5a9a995304b16a435f6aa962240c86c",
+  "size": 107224,
+  "notes": "新增手機端自動智慧偵測黑邊：按鈕觸發多幀取樣、裁切預覽、四邊像素微調、重新偵測與全畫面輸出。確認後固定裁切，直接同步套用720p及1080p雙串流，不需重啟投影。暗場或來源尺寸變更時保留原設定。"
 }
