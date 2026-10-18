@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1041,
-  "version": "0.10.41",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.41/CarSync_0.10.41.apk",
-  "notes": "修正投影碼率顯示換算，避免自我測試錯誤顯示 0.00 Mbps。新增預設啟用的「30 FPS 優先模式」，向硬體編碼器要求即時優先與 30 FPS 運作速率；車機不接受參數時自動安全回退標準模式。自我測試新增輸入 PTS 最大間隔與停頓次數，可區分車機畫面擷取少幀、硬體編碼輸出及網路回壓。",
-  "sha256": "d22c7470b306a8018981346ae736416ee42260edd0eee3f2f93e0f2df287d9af"
+  "release": 1042,
+  "version": "0.10.42",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.42/CarSync_0.10.42.apk",
+  "notes": "Fast 25 結構修正版：投影編碼 session 改為隔離生命週期，防止舊執行緒關閉新編碼器；編碼輸出先釋放硬體 buffer，再以有上限的共用 buffer pool 傳送，降低 GC 與閃退。平板端將網路讀取、解碼輸入、解碼輸出分離，並新增實際 Surface render callback FPS。控制連線短暫重連時不再中斷仍正常收到的投影。自我測試只有全程及每個 5 秒視窗均達 25 FPS 才判定通過。",
+  "sha256": "cf140740b1c686472a1cd1b1209221ce6750f26711a37bd737df06760a29915d"
 }
