@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.mobile.display",
-  "release": 1040,
-  "version": "0.10.40",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.40/CarSync_0.10.40.apk",
-  "notes": "修正投影編碼器選擇資訊：不相容的軟體編碼器改為唯讀不可選，清楚區分偏好、要求與實際運作編碼器，並在回退時顯示原因。新增1秒、5秒與全程FPS、影格間隔、停頓及瓶頸判斷；加入車機15秒投影自我測試，自動判定車機擷取／編碼或網路回壓，並顯示溫控、CPU頻率與記憶體。維持單一硬體編碼器與穩定投影管線。",
-  "sha256": "e75857c779240f767f1c1f8d31a1d03dc71fe44d20029c7c9329920963093eea"
+  "release": 1041,
+  "version": "0.10.41",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/v0.10.41/CarSync_0.10.41.apk",
+  "notes": "修正投影碼率顯示換算，避免自我測試錯誤顯示 0.00 Mbps。新增預設啟用的「30 FPS 優先模式」，向硬體編碼器要求即時優先與 30 FPS 運作速率；車機不接受參數時自動安全回退標準模式。自我測試新增輸入 PTS 最大間隔與停頓次數，可區分車機畫面擷取少幀、硬體編碼輸出及網路回壓。",
+  "sha256": "d22c7470b306a8018981346ae736416ee42260edd0eee3f2f93e0f2df287d9af"
 }
