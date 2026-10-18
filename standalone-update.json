@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha6",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha6/CarSync_Standalone_1.0.0-alpha6.apk",
-  "sha256": "60d812498161c1c846c0912ba7e126d96dba1aa31c993907d2719dcdfe586f69",
-  "size": 107224,
-  "notes": "新增手機端自動智慧偵測黑邊：按鈕觸發多幀取樣、裁切預覽、四邊像素微調、重新偵測與全畫面輸出。確認後固定裁切，直接同步套用720p及1080p雙串流，不需重啟投影。暗場或來源尺寸變更時保留原設定。"
+  "version": "1.0.0-alpha7",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha7/CarSync_Standalone_1.0.0-alpha7.apk",
+  "sha256": "d5dbc1cca93216c8df33f7786b82c0afa88dceed6f69890f08f17063331e3d10",
+  "size": 111320,
+  "notes": "修正手機已投影但接收端黑畫面與音訊被影像解碼阻塞：編碼器輸出改用 Android 可錄製 EGL Surface，移除會排除部分手機 GPU 的 Pbuffer 限制，智慧裁切預覽改用 framebuffer。接收端影像解碼不再長時間阻塞音訊，並顯示實際 EGL、解碼與連線錯誤。"
 }
