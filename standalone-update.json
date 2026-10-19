@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha21",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha21/CarSync_Standalone_1.0.0-alpha21.apk",
-  "sha256": "e9c6a826bf5b24a666390a4d519c1e749f285be7ac2acc1e36065268b3b2839c",
-  "size": 123698,
-  "notes": "提升智慧省電喚醒靈敏度：觸碰時立即切換至高亮度，不等待三星自動亮度慢速調節，10 秒後再降至最低；新增觸碰結束與內容操作事件偵測，改善 YouTube 影片區點擊偶爾沒有恢復亮度的問題。停止投影後仍完整還原原始亮度模式。"
+  "version": "1.0.0-alpha22",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha22/CarSync_Standalone_1.0.0-alpha22.apk",
+  "sha256": "74ec5dd314e1aff9c9c09c21570ca906badb79b3b6bc6a47b4e313ec0e895f13",
+  "size": 127794,
+  "notes": "修正 YouTube 影片區觸碰無法恢復亮度：暗屏時啟用完全透明的觸碰喚醒層，第一下觸碰由 CarSync 直接恢復高亮度並立即移除，後續操作正常交給 YouTube。透明層只在最低亮度期間存在，不會改變接收端投影畫面；首次需允許顯示在其他應用程式上層。"
 }
