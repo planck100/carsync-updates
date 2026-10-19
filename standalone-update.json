@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha12",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha12/CarSync_Standalone_1.0.0-alpha12.apk",
-  "sha256": "a0a2b6d2d73910ba202062f474fa898a5ef594d4e44e9a8d440dfe5886f872fb",
-  "size": 115416,
-  "notes": "指定聲音接收設備時自動記住並關閉手機媒體音量；選擇全部靜音或停止投影時，自動恢復投影前的手機音量。保留 PCM 音量偵測，以確認 Samsung 裝置靜音後是否仍能擷取內部音訊。"
+  "version": "1.0.0-alpha13",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha13/CarSync_Standalone_1.0.0-alpha13.apk",
+  "sha256": "62419687b014384fee5296144e0b2f1ef507369ee6c1bb6f2b3a28647f393916",
+  "size": 111320,
+  "notes": "修正雙解析智慧裁切模式音訊仍走 AAC、造成接收端喇叭計數一直為 0 的問題。相容直通與雙解析模式現在統一使用 PCM 直接傳送；指定接收端時手機仍自動靜音，停止投影後恢復音量。"
 }
