@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha19",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha19/CarSync_Standalone_1.0.0-alpha19.apk",
-  "sha256": "bb557e79642e52e95de562c197d246c94f1211a7fad7ce60c96ba9cb24dccc50",
-  "size": 119512,
-  "notes": "車機接收端新增播放時自動勿擾：收到投影畫面後封鎖通知聲、震動與浮動提示，斷線或離開後恢復原狀，首次需授權勿擾控制。手機端省電改為智慧變暗，閒置約 7 秒後由系統降低背光，觸碰時恢復原亮度，並保持投影不中斷。"
+  "version": "1.0.0-alpha20",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha20/CarSync_Standalone_1.0.0-alpha20.apk",
+  "sha256": "8a50e7985c33d19c9e45c740895da39ee5ee03cacf4df4e04220b71713446772",
+  "size": 123698,
+  "notes": "智慧省電改為完整自動化：投影中閒置 10 秒後直接降到最低亮度，不再受 YouTube 保持螢幕亮起影響；點擊、長按或滑動時立即恢復投影前亮度，暫停與停止投影也會完整還原。首次使用需允許修改系統設定並啟用 CarSync 觸碰亮度偵測無障礙服務。"
 }
