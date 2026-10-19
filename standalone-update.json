@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha14",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha14/CarSync_Standalone_1.0.0-alpha14.apk",
-  "sha256": "4abad388af1adf8253b65f4f259ffd624ef9bcfd65c99affe22030233179fcc0",
+  "version": "1.0.0-alpha15",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha15/CarSync_Standalone_1.0.0-alpha15.apk",
+  "sha256": "272c51f51caab70f7ff8debc2f28e0d0ae9f5985ba5b64029f1fc3277b73ce9e",
   "size": 111320,
-  "notes": "降低高 FPS 但畫面落後的串流延遲：每個影像與 PCM 封包立即 flush、縮小 TCP 與應用層佇列，滿載時丟棄舊封包並要求關鍵幀，不再累積數秒舊畫面；編碼器停用 B-frame 並啟用零延遲提示。"
+  "notes": "針對車機 720p 的固定延遲最佳化：支援時啟用 Android MediaCodec Low Latency 硬體解碼、傳送佇列由 16 降至 8、TCP 發送緩衝降至 64KB，關鍵幀間隔縮短為 1 秒，以降低 FPS 正常但操作反應稍鈍的現象。"
 }
