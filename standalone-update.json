@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha16",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha16/CarSync_Standalone_1.0.0-alpha16.apk",
-  "sha256": "c0715e6819abb57f73f1ed2f2cba2678464bc8279e6e243c73eb73b9de448863",
-  "size": 115416,
-  "notes": "重新設計手機端控制介面，以圖示卡片取代整排文字按鈕；投影固定為車機 720p／平板 1080p 雙解析。新增未投影也能預先連線，以及最低亮度、保持解鎖、停止後自動還原的省電模式。720p 傳送佇列縮至 4 幀，TCP 發送／接收緩衝同步縮小，進一步降低操作延遲。"
+  "version": "1.0.0-alpha17",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha17/CarSync_Standalone_1.0.0-alpha17.apk",
+  "sha256": "052503620d9a48ee696fce308c6ce6a38385da9acd23e16d938a9c950dd6ed49",
+  "size": 119512,
+  "notes": "主畫面只顯示一個可用的熱點或 Wi-Fi 區域網路 IP，過濾行動網路、VPN 與虛擬介面。停止按鈕改為暫停傳送，保留 Android 螢幕投影授權；再次按開始可直接恢復，不會重複跳出分享畫面視窗。暫停期間停止影像渲染與影音傳送，並恢復手機亮度與音量。"
 }
