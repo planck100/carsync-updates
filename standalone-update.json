@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha7",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha7/CarSync_Standalone_1.0.0-alpha7.apk",
-  "sha256": "d5dbc1cca93216c8df33f7786b82c0afa88dceed6f69890f08f17063331e3d10",
+  "version": "1.0.0-alpha8",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha8/CarSync_Standalone_1.0.0-alpha8.apk",
+  "sha256": "66b371f9ab5f6f0a5725aec97cf06111265fb83f355dd2e111c4958bf115ed79",
   "size": 111320,
-  "notes": "修正手機已投影但接收端黑畫面與音訊被影像解碼阻塞：編碼器輸出改用 Android 可錄製 EGL Surface，移除會排除部分手機 GPU 的 Pbuffer 限制，智慧裁切預覽改用 framebuffer。接收端影像解碼不再長時間阻塞音訊，並顯示實際 EGL、解碼與連線錯誤。"
+  "notes": "新增預設相容直通模式：MediaProjection 直接輸入單一 1280×720 硬體編碼器，完全繞過造成 Samsung／Android 16 黑影格的 OpenGL 裁切與雙編碼路徑，車機和平板共用同一低負擔串流。保留可切換的雙解析智慧裁切模式，並持續顯示實際音訊傳送狀態。"
 }
