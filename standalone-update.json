@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha17",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha17/CarSync_Standalone_1.0.0-alpha17.apk",
-  "sha256": "052503620d9a48ee696fce308c6ce6a38385da9acd23e16d938a9c950dd6ed49",
+  "version": "1.0.0-alpha18",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha18/CarSync_Standalone_1.0.0-alpha18.apk",
+  "sha256": "63652869f5f09f7ea9d712c302c04b6092fe19cf0ea9225b92aa6b520025adff",
   "size": 119512,
-  "notes": "主畫面只顯示一個可用的熱點或 Wi-Fi 區域網路 IP，過濾行動網路、VPN 與虛擬介面。停止按鈕改為暫停傳送，保留 Android 螢幕投影授權；再次按開始可直接恢復，不會重複跳出分享畫面視窗。暫停期間停止影像渲染與影音傳送，並恢復手機亮度與音量。"
+  "notes": "改善平板 1080p 流暢度：1080p 改為 5.5 Mbps 穩定碼率、延長關鍵幀週期以降低熱點流量尖峰，縮短傳送與接收緩衝。接收端新增約一幀的時間戳節奏校正，吸收 Wi-Fi 封包抖動，避免畫面忽快忽慢，同時維持低延遲。"
 }
