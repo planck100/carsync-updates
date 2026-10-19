@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha20",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha20/CarSync_Standalone_1.0.0-alpha20.apk",
-  "sha256": "8a50e7985c33d19c9e45c740895da39ee5ee03cacf4df4e04220b71713446772",
+  "version": "1.0.0-alpha21",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha21/CarSync_Standalone_1.0.0-alpha21.apk",
+  "sha256": "e9c6a826bf5b24a666390a4d519c1e749f285be7ac2acc1e36065268b3b2839c",
   "size": 123698,
-  "notes": "智慧省電改為完整自動化：投影中閒置 10 秒後直接降到最低亮度，不再受 YouTube 保持螢幕亮起影響；點擊、長按或滑動時立即恢復投影前亮度，暫停與停止投影也會完整還原。首次使用需允許修改系統設定並啟用 CarSync 觸碰亮度偵測無障礙服務。"
+  "notes": "提升智慧省電喚醒靈敏度：觸碰時立即切換至高亮度，不等待三星自動亮度慢速調節，10 秒後再降至最低；新增觸碰結束與內容操作事件偵測，改善 YouTube 影片區點擊偶爾沒有恢復亮度的問題。停止投影後仍完整還原原始亮度模式。"
 }
