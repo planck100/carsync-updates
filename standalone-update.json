@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha25",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha25/CarSync_Standalone_1.0.0-alpha25.apk",
-  "sha256": "477df969d8e4d21076f2816e8db50b61076f4bd2804c32c6f19b611edee2dc81",
+  "version": "1.0.0-alpha26",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha26/CarSync_Standalone_1.0.0-alpha26.apk",
+  "sha256": "264f319cc919bc06c682794021c51a5b135995851230902e58546966ab047874",
   "size": 13311223,
-  "notes": "投影／YouTube 中繼第二階段整合：共用主機與接收端角色、配對主機、接收尺寸、全螢幕設定與單一聲音設備；手機同時準備 720p／1080p，接收端各自選擇。新增共用暫停／繼續／下一部、播放清單與相關影片自動續播、主機時間軸、多設備漂移校正、斷線重連，以及投影切換中繼的自動接手。模式切換遮罩尚未加入。"
+  "notes": "商業化統一介面：主控手機在同一個 CarSync 主頁選擇螢幕畫面或 YouTube，網址、播放、暫停、繼續、下一部、停止與聲音設備全部由手機控制；移除獨立中繼操作頁與工程化用詞。車機／平板改為純播放設備，YouTube 播放器不顯示播放鍵、進度條或下一部，僅被動跟隨主控手機並保留畫質、填滿方式及勿擾設定。"
 }
