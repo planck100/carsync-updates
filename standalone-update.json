@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha22",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha22/CarSync_Standalone_1.0.0-alpha22.apk",
-  "sha256": "74ec5dd314e1aff9c9c09c21570ca906badb79b3b6bc6a47b4e313ec0e895f13",
+  "version": "1.0.0-alpha23",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha23/CarSync_Standalone_1.0.0-alpha23.apk",
+  "sha256": "e2bd8c85e041fb6f3f76414c5c1b27acfaa86e1ada2cd2bf589ffef7bd3d6887",
   "size": 127794,
-  "notes": "修正 YouTube 影片區觸碰無法恢復亮度：暗屏時啟用完全透明的觸碰喚醒層，第一下觸碰由 CarSync 直接恢復高亮度並立即移除，後續操作正常交給 YouTube。透明層只在最低亮度期間存在，不會改變接收端投影畫面；首次需允許顯示在其他應用程式上層。"
+  "notes": "整合 YouTube 即時中繼第一階段：正式 CarSync 單一 APK 保留原投影、裁切、亮度與接收功能，新增 NewPipe／Media3 關屏中繼；手機可選 720p 或 1080p，車機和平板只連手機、不直接連 YouTube。支援 YouTube/Morphy 分享、Mix 網址轉換、自動搜尋手機、Range 拖曳、前景服務、WakeLock 與 Wi-Fi Lock。"
 }
