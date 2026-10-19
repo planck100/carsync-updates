@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha8",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha8/CarSync_Standalone_1.0.0-alpha8.apk",
-  "sha256": "66b371f9ab5f6f0a5725aec97cf06111265fb83f355dd2e111c4958bf115ed79",
+  "version": "1.0.0-alpha9",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha9/CarSync_Standalone_1.0.0-alpha9.apk",
+  "sha256": "8f4863ac890ed8997e1ec969c45557cdb05b3985dc474c87e4c84ded7e57f984",
   "size": 111320,
-  "notes": "新增預設相容直通模式：MediaProjection 直接輸入單一 1280×720 硬體編碼器，完全繞過造成 Samsung／Android 16 黑影格的 OpenGL 裁切與雙編碼路徑，車機和平板共用同一低負擔串流。保留可切換的雙解析智慧裁切模式，並持續顯示實際音訊傳送狀態。"
+  "notes": "修正 Android 14–16 投影授權成單一 App 後，CarSync 退到背景造成所有接收端只有黑色影格且音訊為 0 的問題。手機端現在明確要求擷取整個預設螢幕；相容直通 720p 仍為預設模式，接收端保留音訊影格計數。"
 }
