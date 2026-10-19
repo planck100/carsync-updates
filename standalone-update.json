@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha11",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha11/CarSync_Standalone_1.0.0-alpha11.apk",
-  "sha256": "996275f93ed88a7472bc6b1a729577994371eb41caa9de1dd1be51d4a44ad24c",
-  "size": 111320,
-  "notes": "移除會在投影畫面形成黑色遮罩的手機端安全浮窗；接收端右上狀態改為透明小字與陰影。PCM 播放改為阻塞式完整寫入並強制媒體音量輸出；手機端加入 PCM 音量偵測，可直接判斷來源 App 是否只提供靜音資料。"
+  "version": "1.0.0-alpha12",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha12/CarSync_Standalone_1.0.0-alpha12.apk",
+  "sha256": "a0a2b6d2d73910ba202062f474fa898a5ef594d4e44e9a8d440dfe5886f872fb",
+  "size": 115416,
+  "notes": "指定聲音接收設備時自動記住並關閉手機媒體音量；選擇全部靜音或停止投影時，自動恢復投影前的手機音量。保留 PCM 音量偵測，以確認 Samsung 裝置靜音後是否仍能擷取內部音訊。"
 }
