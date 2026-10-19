@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha18",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha18/CarSync_Standalone_1.0.0-alpha18.apk",
-  "sha256": "63652869f5f09f7ea9d712c302c04b6092fe19cf0ea9225b92aa6b520025adff",
+  "version": "1.0.0-alpha19",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha19/CarSync_Standalone_1.0.0-alpha19.apk",
+  "sha256": "bb557e79642e52e95de562c197d246c94f1211a7fad7ce60c96ba9cb24dccc50",
   "size": 119512,
-  "notes": "改善平板 1080p 流暢度：1080p 改為 5.5 Mbps 穩定碼率、延長關鍵幀週期以降低熱點流量尖峰，縮短傳送與接收緩衝。接收端新增約一幀的時間戳節奏校正，吸收 Wi-Fi 封包抖動，避免畫面忽快忽慢，同時維持低延遲。"
+  "notes": "車機接收端新增播放時自動勿擾：收到投影畫面後封鎖通知聲、震動與浮動提示，斷線或離開後恢復原狀，首次需授權勿擾控制。手機端省電改為智慧變暗，閒置約 7 秒後由系統降低背光，觸碰時恢復原亮度，並保持投影不中斷。"
 }
