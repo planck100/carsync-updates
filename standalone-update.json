@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha24",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha24/CarSync_Standalone_1.0.0-alpha24.apk",
-  "sha256": "332f8d214ba33bcfd5d83ece78bc7ee76d038b6ee62ebd92ace1405d13ffc8a1",
-  "size": 13290743,
-  "notes": "正式整合 YouTube 即時中繼第一階段：單一 CarSync APK 保留原投影、裁切、亮度與接收功能，新增產品化的 YouTube 中繼頁；手機可選 720p 或 1080p，車機和平板只連手機、不直接連 YouTube。支援 YouTube/Morphy 分享、Mix 網址轉換、自動搜尋手機、Range 拖曳及手機關屏持續中繼。"
+  "version": "1.0.0-alpha25",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha25/CarSync_Standalone_1.0.0-alpha25.apk",
+  "sha256": "83bfc26d07abf549cbb96983596163ec55caaaa797095e2cfd1e56f0d2121feb",
+  "size": 13311223,
+  "notes": "投影／YouTube 中繼第二階段整合：共用主機與接收端角色、配對主機、接收尺寸、全螢幕設定與單一聲音設備；手機同時準備 720p／1080p，接收端各自選擇。新增共用暫停／繼續／下一部、播放清單與相關影片自動續播、主機時間軸、多設備漂移校正、斷線重連，以及投影切換中繼的自動接手。模式切換遮罩尚未加入。"
 }
