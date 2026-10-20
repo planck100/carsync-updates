@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha37",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha37/CarSync_Standalone_1.0.0-alpha37.apk",
-  "sha256": "5997f58e0aa353473813d922504a4e3437b80892d0ab6418c296eafe711a62fb",
-  "size": 13364471,
-  "notes": "保留2.5秒啟播門檻。影像與音訊獨立HTTP診斷；讀取逾時最多兩次從已收到的位元組位置重連，避免重建播放器；持續失敗先重取同畫質網址，再考慮降級。穩定播放時間跨影片累計，暫停不計入；回升冷卻60秒且需30秒預載。較高畫質下一部準備完成前保留原有預載。需實機驗證網路與多接收端表現。"
+  "version": "1.0.0-alpha38",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha38/CarSync_Standalone_1.0.0-alpha38.apk",
+  "sha256": "acfc86e1d9998e3f5155e8fa0bbf65fc9cfd141671f44620b3b057f92380331f",
+  "size": 13368567,
+  "notes": "依alpha37實機Log修正：1080p影像下載約2.5至2.8Mbps，沒有HTTP逾時但供應速度幾乎等於播放消耗；同一影片60秒內1080p重緩衝2次即切至720p，720p需3次才切480p。1080p目前影片需預載45秒才開始下一部預載，低於30秒立即停止並冷卻60秒，避免預載搶走主影片頻寬；720p維持15秒啟動、低於8秒停止。HTTP診斷改為每5秒彙總，保留更長時間的關鍵Log。維持2.5秒快速啟播。"
 }
