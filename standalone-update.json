@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha43",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha43/CarSync_Standalone_1.0.0-alpha43.apk",
-  "sha256": "a6b1e7bdec7367631cfcc2cdb73925ba0260061aeb6317141d52935de21c8146",
-  "size": 13479159,
-  "notes": "改善第一部YouTube DASH起播畫質：1080p模式提供12 Mbps、720p模式提供6 Mbps初始頻寬估算，避免首次播放因未知頻寬先選360p；同一BandwidthMeter跨換片保留量測結果並接入自訂YouTube DataSource，網路不足時仍由Media3自動降級。診斷頁將「已預載影片」更名為「目前播放緩衝」，「下一部」更名為「下一部預載」。"
+  "version": "1.0.0-alpha44",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha44/CarSync_Standalone_1.0.0-alpha44.apk",
+  "sha256": "d7b2c850e7e1b3d6443361fa4ba299167048cc90e44c595b8946ea9c80a48be0",
+  "size": 13483255,
+  "notes": "修正UIS8581車機破圖：CropRenderer在Surface輸入為60fps時實際節流至最高約30fps，避免MediaCodec忽略KEY_FRAME_RATE提示而輸出60fps、造成車機解碼負擔倍增；接收端H.264輸入buffer等待由10ms延長至50ms，不再無聲漏掉參考frame，並新增decoder input timeout drop診斷。保留720p 3Mbps與每秒關鍵幀。"
 }
