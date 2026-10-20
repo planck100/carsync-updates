@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha40",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha40/CarSync_Standalone_1.0.0-alpha40.apk",
-  "sha256": "437d97c53ea75a16723f4d15539ca820fe071975ae68500a093debb5b8bbb54b",
+  "version": "1.0.0-alpha41",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha41/CarSync_Standalone_1.0.0-alpha41.apk",
+  "sha256": "4621afa2abdc7a407c325b7b8863a644b8109604bbc5019e5b9288b8da9bfd56",
   "size": 13479159,
-  "notes": "YouTube播放核心改為真正DASH自適應：手機依NewPipe提供的MP4初始化範圍、索引範圍、codec、bitrate與解析度建立本機DASH manifest，Media3可在同一播放器內自動切換480p／720p／1080p，不再用重開固定畫質網址模擬升降級。下一部預載也保存完整DASH manifest與最高畫質前段快取；Log新增DASH軌道切換記錄。"
+  "notes": "修正alpha40 DASH啟動後EOF：DASH初始化、索引與媒體分段改用YouTube所需的range網址參數，不再使用Progressive模式的HTTP Range標頭；range參數回傳200時不再錯誤跳過position位元組。保留一般Progressive／預載的Range標頭方式。HTTP Log新增Content-Range回應資訊。"
 }
