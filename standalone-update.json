@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha32",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha32/CarSync_Standalone_1.0.0-alpha32.apk",
-  "sha256": "a8a2b311877c466e5a6bc41275b26f03967e8cf8096fc2108d59ce0a3c01af17",
-  "size": 13348087,
-  "notes": "改善橫向主控介面：音軌、字幕與更換內容改為限制寬度的深色控制膠囊，不再使用占滿整列的亮色按鈕；暫停與停止控制集中排列。加入系統狀態列與導覽列安全邊界，避免按鈕延伸到右側導覽區。長音軌名稱自動省略並清除異常控制字元，播放狀態改用相容文字顯示；播放設備列表只在連線狀態改變時重繪，減少畫面閃動。"
+  "version": "1.0.0-alpha33",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha33/CarSync_Standalone_1.0.0-alpha33.apk",
+  "sha256": "6ee1f339ce53625e0921d44114dd72e6067189074d9bc104acbf5e797e6128bd",
+  "size": 13352183,
+  "notes": "改善 YouTube 與三台設備連續播放穩定度：保留約 2.5 秒快速啟播，播放後維持較充足的背景來源緩衝。針對一台 720p 車機與兩台 1080p 平板，手機讀取一次 1080p 來源並產生共用的 1080p 編碼串流及獨立 720p 串流；只有全部接收設備皆為 720p 時才改讀 720p 來源。每台設備使用獨立抗抖動佇列，慢速平板不會阻塞車機；音訊不再擠掉影像。影像壅塞時捨棄不完整相依影格，等待新的完整關鍵影格再恢復，並限制關鍵影格請求頻率。車機音訊播放移至獨立執行緒，避免 AudioTrack 阻塞影像收包，同時加大區域網路 Socket 緩衝。播放詳情新增來源緩衝、重新緩衝次數、影音丟棄與佇列峰值。"
 }
