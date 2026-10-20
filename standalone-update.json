@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha34",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha34/CarSync_Standalone_1.0.0-alpha34.apk",
-  "sha256": "28939a0d001f147a159c68a7d1e6d194557051e56a4210e7a4b4444200f45d75",
-  "size": 13352183,
-  "notes": "主要修正 YouTube 播放中斷重緩衝：保留約 2.5 秒快速啟播並在背景持續預載；若一次來源緩衝連續超過 5 秒，會保留播放位置自動由 1080p 降至 720p，仍不足時再降至 480p，避免固定停頓約 20 秒。修正接收設備尚未連線時來源被選成 720p，依照一台 720p 車機與兩台 1080p 平板配置，一律先準備 1080p來源，再同時輸出720p與1080p。播放詳情將緩衝秒數改標示為「已預載影片」，並獨立顯示播放中斷重緩衝次數。延續每台設備獨立抗抖動佇列、關鍵影格恢復、音訊獨立執行緒與加大Socket緩衝。"
+  "version": "1.0.0-alpha35",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha35/CarSync_Standalone_1.0.0-alpha35.apk",
+  "sha256": "cd7e33767398a1f369ea73da4c1cdb07f3452cb466ba89b040b6e3f9356f99aa",
+  "size": 13360375,
+  "notes": "加入可直接複製的播放診斷 Log，每 5 秒記錄來源畫質、播放狀態、播放位置、預載毫秒、重緩衝次數，並記錄畫質升降、錯誤及各接收端連線、丟幀和佇列峰值。修正自動畫質降至 480p 後不會恢復：480p 穩定約 60 秒且預載至少 2.5 秒會嘗試升回 720p；720p 穩定約 120 秒後嘗試升回 1080p。若升級後 30 秒內再次緩衝，暫停升級 5 分鐘，避免反覆切換。設定視窗改為橫向車機適用的短按鈕並排與可捲動內容，避免按鈕過大或被頁面裁切。"
 }
