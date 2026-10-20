@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha27",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha27/CarSync_Standalone_1.0.0-alpha27.apk",
-  "sha256": "2e179ddfa4036a255124e020c9eee618c36d69327e0de87a9aa65bcad1e7dab8",
-  "size": 13311223,
-  "notes": "單一 CarSync 建置：取消獨立 YouTube 測試 APK，只發布正式 CarSync。接收端維持被動全螢幕播放，主控從 YouTube 切回螢幕畫面時會自動返回投影畫面；網路短暫中斷後持續自動重連，不再於三輪失敗後退出。"
+  "version": "1.0.0-alpha28",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha28/CarSync_Standalone_1.0.0-alpha28.apk",
+  "sha256": "10a5c9460712854b6b80f2bd6167372801bdd04d91fe3d9675716a150f707495",
+  "size": 13323511,
+  "notes": "YouTube 手機端轉碼測試版：手機直接解析並以硬體解碼 YouTube，再透過既有 GPU 管線編碼為 720p／1080p H.264，由車機和平板沿用投影接收器播放。接收端不再自行抓取、合併或同步 YouTube 串流，降低 UIS8581 車機負擔；YouTube 與螢幕投影共用連線、解碼器、全螢幕顯示及單一聲音設備，切換時不再開啟第二個播放頁面，手機關屏仍持續執行。"
 }
