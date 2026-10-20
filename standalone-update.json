@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha31",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha31/CarSync_Standalone_1.0.0-alpha31.apk",
-  "sha256": "101ae8e35b51bafeba352c4f1874dda76ee422faf66fa5abfaffaeef7ed720d5",
+  "version": "1.0.0-alpha32",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha32/CarSync_Standalone_1.0.0-alpha32.apk",
+  "sha256": "a8a2b311877c466e5a6bc41275b26f03967e8cf8096fc2108d59ce0a3c01af17",
   "size": 13348087,
-  "notes": "重新設計主控手機介面：取消投影／YouTube／本機影片的技術模式分頁，改為單一「現在播放」首頁。未播放時直接顯示分享手機畫面、播放 YouTube、開啟影片檔案三個內容入口；播放後只顯示該來源可用的暫停、繼續、下一部、裁切、音軌與字幕控制。更換內容使用獨立選擇面板，取消時不會停止目前播放。播放設備改為緊湊卡片，以喇叭圖示指定唯一聲音設備；配對碼、FPS、位元率、掉幀、連線檢查、更新與省電設定移入新增設備、播放詳情及設定面板，降低主頁資訊負擔。"
+  "notes": "改善橫向主控介面：音軌、字幕與更換內容改為限制寬度的深色控制膠囊，不再使用占滿整列的亮色按鈕；暫停與停止控制集中排列。加入系統狀態列與導覽列安全邊界，避免按鈕延伸到右側導覽區。長音軌名稱自動省略並清除異常控制字元，播放狀態改用相容文字顯示；播放設備列表只在連線狀態改變時重繪，減少畫面閃動。"
 }
