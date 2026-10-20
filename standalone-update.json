@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha36",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha36/CarSync_Standalone_1.0.0-alpha36.apk",
-  "sha256": "9d1f43d23f54c4979ba45310f384d621bfc5b3943e6f23e75523b6ef9b32c8d1",
+  "version": "1.0.0-alpha37",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha37/CarSync_Standalone_1.0.0-alpha37.apk",
+  "sha256": "5997f58e0aa353473813d922504a4e3437b80892d0ab6418c296eafe711a62fb",
   "size": 13364471,
-  "notes": "播放目前 YouTube 影片時即準備下一部：目前預載達 15 秒後，以共用 Media3 快取預載下一部開頭（720p 約 6MB、1080p 約 10MB及音訊1MB）；目前預載低於8秒會停止下一部預載，避免搶走播放頻寬。自動下一部與手動下一部會直接使用已解析且已快取的串流。修正畫質切換首次載入被5秒規則誤判：首次載入與播放中斷分開計時，回退中的720p未READY前不再連降480p；升級失敗只回上一個穩定畫質。為流暢度首部先以720p開始，穩定後只提高下一部的偏好畫質，不在目前影片途中切換。播放詳情新增下一部預載狀態。"
+  "notes": "保留2.5秒啟播門檻。影像與音訊獨立HTTP診斷；讀取逾時最多兩次從已收到的位元組位置重連，避免重建播放器；持續失敗先重取同畫質網址，再考慮降級。穩定播放時間跨影片累計，暫停不計入；回升冷卻60秒且需30秒預載。較高畫質下一部準備完成前保留原有預載。需實機驗證網路與多接收端表現。"
 }
