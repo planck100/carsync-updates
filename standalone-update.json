@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha39",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha39/CarSync_Standalone_1.0.0-alpha39.apk",
-  "sha256": "c9973741d00742c60c633cd808e37d444dc25d88e48ded5b2121822c74492e9d",
-  "size": 13368567,
-  "notes": "參考NewPipe正式播放器的YouTube資料來源：Google videoplayback改用桌面User-Agent、Origin/Referer、POST與編號請求，同時保留Range續傳、快取與alpha38的播放優先保護。用來解除一般GET可能造成的來源限速，讓1080p能更快累積緩衝；Log仍會顯示目前影片與預載各自的實際kbps。"
+  "version": "1.0.0-alpha40",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha40/CarSync_Standalone_1.0.0-alpha40.apk",
+  "sha256": "437d97c53ea75a16723f4d15539ca820fe071975ae68500a093debb5b8bbb54b",
+  "size": 13479159,
+  "notes": "YouTube播放核心改為真正DASH自適應：手機依NewPipe提供的MP4初始化範圍、索引範圍、codec、bitrate與解析度建立本機DASH manifest，Media3可在同一播放器內自動切換480p／720p／1080p，不再用重開固定畫質網址模擬升降級。下一部預載也保存完整DASH manifest與最高畫質前段快取；Log新增DASH軌道切換記錄。"
 }
