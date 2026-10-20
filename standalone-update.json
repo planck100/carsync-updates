@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha42",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha42/CarSync_Standalone_1.0.0-alpha42.apk",
-  "sha256": "54ab2de18217359569719d10c520dedfa08dab79ec48d11b94cfab41df00a752",
+  "version": "1.0.0-alpha43",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha43/CarSync_Standalone_1.0.0-alpha43.apk",
+  "sha256": "a6b1e7bdec7367631cfcc2cdb73925ba0260061aeb6317141d52935de21c8146",
   "size": 13479159,
-  "notes": "修正YouTube DASH啟動EOF：只選擇DeliveryMethod.PROGRESSIVE_HTTP軌道，排除不可套用SegmentBase的OTF/DASH來源；每個影像與音訊軌道改由NewPipe官方YoutubeProgressiveDashManifestCreator產生MPD，再交由Media3 DashManifestParser解析；播放來源加入MediaItem原始URI；錯誤Log加入完整cause chain與第一個stack frame。"
+  "notes": "改善第一部YouTube DASH起播畫質：1080p模式提供12 Mbps、720p模式提供6 Mbps初始頻寬估算，避免首次播放因未知頻寬先選360p；同一BandwidthMeter跨換片保留量測結果並接入自訂YouTube DataSource，網路不足時仍由Media3自動降級。診斷頁將「已預載影片」更名為「目前播放緩衝」，「下一部」更名為「下一部預載」。"
 }
