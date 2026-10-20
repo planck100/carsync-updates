@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha29",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha29/CarSync_Standalone_1.0.0-alpha29.apk",
-  "sha256": "0b3d655095fdfabbc8a44d815f9a69635d288762185012c32898b42562f67506",
-  "size": 13327607,
-  "notes": "YouTube 自適應轉碼版：只餵送接收端實際需要的 720p／1080p 編碼輸出，依各路傳送壅塞與手機溫度動態調整位元率；串流網址失效時會重新解析原影片並從原進度續播。播放清單與一般影片都會建立去重的下一部佇列，一般影片會自動加入相關影片，無法播放的候選項目會自動略過。維持手機邊讀取、邊解碼、邊轉碼傳送，接收端仍只負責硬體解碼，且聲音只送往指定的一台設備。"
+  "version": "1.0.0-alpha30",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha30/CarSync_Standalone_1.0.0-alpha30.apk",
+  "sha256": "73b0eb400fd7536f25ef7357ff6c97fc17766053273254f929b107e6d1162da9",
+  "size": 13343991,
+  "notes": "新增本機影片背景轉碼：主控手機可從系統檔案選擇 MKV、MP4、M4V、MOV、WebM、TS／MTS、MPG／MPEG、VOB、FLV、OGV 與 AVI 等常用影片，沿用既有 GPU 與雙 H.264 管線即時傳送 720p／1080p。介面會列出容器內可用音軌與文字字幕，音軌由手機解碼為 PCM 並只送往指定的一台設備；SRT、ASS／SSA、WebVTT 等文字字幕由手機合成進影像。AVI 會嘗試使用裝置解碼能力，舊式或特殊 AVI 編碼若不受 Android 支援會顯示明確的重新封裝提示。播放可在手機關閉螢幕後繼續，並沿用動態輸出、網路壅塞及溫度降載。"
 }
