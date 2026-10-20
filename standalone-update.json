@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha41",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha41/CarSync_Standalone_1.0.0-alpha41.apk",
-  "sha256": "4621afa2abdc7a407c325b7b8863a644b8109604bbc5019e5b9288b8da9bfd56",
+  "version": "1.0.0-alpha42",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha42/CarSync_Standalone_1.0.0-alpha42.apk",
+  "sha256": "54ab2de18217359569719d10c520dedfa08dab79ec48d11b94cfab41df00a752",
   "size": 13479159,
-  "notes": "修正alpha40 DASH啟動後EOF：DASH初始化、索引與媒體分段改用YouTube所需的range網址參數，不再使用Progressive模式的HTTP Range標頭；range參數回傳200時不再錯誤跳過position位元組。保留一般Progressive／預載的Range標頭方式。HTTP Log新增Content-Range回應資訊。"
+  "notes": "修正YouTube DASH啟動EOF：只選擇DeliveryMethod.PROGRESSIVE_HTTP軌道，排除不可套用SegmentBase的OTF/DASH來源；每個影像與音訊軌道改由NewPipe官方YoutubeProgressiveDashManifestCreator產生MPD，再交由Media3 DashManifestParser解析；播放來源加入MediaItem原始URI；錯誤Log加入完整cause chain與第一個stack frame。"
 }
