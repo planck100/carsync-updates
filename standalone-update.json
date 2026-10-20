@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha28",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha28/CarSync_Standalone_1.0.0-alpha28.apk",
-  "sha256": "10a5c9460712854b6b80f2bd6167372801bdd04d91fe3d9675716a150f707495",
-  "size": 13323511,
-  "notes": "YouTube 手機端轉碼測試版：手機直接解析並以硬體解碼 YouTube，再透過既有 GPU 管線編碼為 720p／1080p H.264，由車機和平板沿用投影接收器播放。接收端不再自行抓取、合併或同步 YouTube 串流，降低 UIS8581 車機負擔；YouTube 與螢幕投影共用連線、解碼器、全螢幕顯示及單一聲音設備，切換時不再開啟第二個播放頁面，手機關屏仍持續執行。"
+  "version": "1.0.0-alpha29",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha29/CarSync_Standalone_1.0.0-alpha29.apk",
+  "sha256": "0b3d655095fdfabbc8a44d815f9a69635d288762185012c32898b42562f67506",
+  "size": 13327607,
+  "notes": "YouTube 自適應轉碼版：只餵送接收端實際需要的 720p／1080p 編碼輸出，依各路傳送壅塞與手機溫度動態調整位元率；串流網址失效時會重新解析原影片並從原進度續播。播放清單與一般影片都會建立去重的下一部佇列，一般影片會自動加入相關影片，無法播放的候選項目會自動略過。維持手機邊讀取、邊解碼、邊轉碼傳送，接收端仍只負責硬體解碼，且聲音只送往指定的一台設備。"
 }
