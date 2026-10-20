@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha38",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha38/CarSync_Standalone_1.0.0-alpha38.apk",
-  "sha256": "e0c2544befe6da4ec3ce6e7437955f1105822d56265e5c78b830fd82d0ab9061",
+  "version": "1.0.0-alpha39",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha39/CarSync_Standalone_1.0.0-alpha39.apk",
+  "sha256": "c9973741d00742c60c633cd808e37d444dc25d88e48ded5b2121822c74492e9d",
   "size": 13368567,
-  "notes": "依alpha37實機Log修正：1080p影像下載約2.5至2.8Mbps，沒有HTTP逾時但供應速度幾乎等於播放消耗；同一影片60秒內1080p重緩衝2次即切至720p，720p需3次才切480p。1080p目前影片需預載45秒才開始下一部預載，低於30秒立即停止並冷卻60秒，避免預載搶走主影片頻寬；720p維持15秒啟動、低於8秒停止。HTTP診斷改為每5秒彙總，保留更長時間的關鍵Log。維持2.5秒快速啟播。"
+  "notes": "參考NewPipe正式播放器的YouTube資料來源：Google videoplayback改用桌面User-Agent、Origin/Referer、POST與編號請求，同時保留Range續傳、快取與alpha38的播放優先保護。用來解除一般GET可能造成的來源限速，讓1080p能更快累積緩衝；Log仍會顯示目前影片與預載各自的實際kbps。"
 }
