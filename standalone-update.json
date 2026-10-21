@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha47",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha47/CarSync_Standalone_1.0.0-alpha47.apk",
-  "sha256": "5a45c17aa2bb11b6d423a863b852e5a4b56aae8aa9f9ae3d5659dc57bba2b83a",
+  "version": "1.0.0-alpha48",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha48/CarSync_Standalone_1.0.0-alpha48.apk",
+  "sha256": "c9a8c05e5ec99dbcba7eb6d4d8748e01f2f1a6b2ea2d6e02364853821921ac51",
   "size": 13491447,
-  "notes": "新增完整結束連線流程：主控頁右上角提供電源按鈕，確認後廣播 SESSION_END，所有車機／平板停止解碼、斷開連線並關閉 CarSync，主控隨後停止前景服務並關閉。主控按返回鍵或從最近使用項目移除時也會進入結束流程；一般停止播放仍保持設備連線。"
+  "notes": "首頁視覺修正：移除會在部分 Samsung 裝置顯示成缺字方框的 Unicode 電源符號，改用 Android 原生電源圖示；結束連線按鈕縮為 44dp 並整合至標題列，平常使用中性色，紅色警示只保留在確認步驟。同時微調標題、功能圖示尺寸與間距，讓主控頁更緊湊一致。"
 }
