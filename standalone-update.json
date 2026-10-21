@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha48",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha48/CarSync_Standalone_1.0.0-alpha48.apk",
-  "sha256": "c9a8c05e5ec99dbcba7eb6d4d8748e01f2f1a6b2ea2d6e02364853821921ac51",
+  "version": "1.0.0-alpha49",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha49/CarSync_Standalone_1.0.0-alpha49.apk",
+  "sha256": "4b014440f7f7d2e93f4447750feaa0648298b1c7273c3ee36f006ac3b2375a4c",
   "size": 13491447,
-  "notes": "首頁視覺修正：移除會在部分 Samsung 裝置顯示成缺字方框的 Unicode 電源符號，改用 Android 原生電源圖示；結束連線按鈕縮為 44dp 並整合至標題列，平常使用中性色，紅色警示只保留在確認步驟。同時微調標題、功能圖示尺寸與間距，讓主控頁更緊湊一致。"
+  "notes": "修正內嵌字幕可選取但不顯示：本機 MKV 的 Blu-ray/PGS 圖形字幕會由 Media3 以 Cue.bitmap 輸出，舊版只處理文字 Cue。新版可依字幕原始位置、尺寸與錨點將圖形字幕合成到手機端轉碼畫面，同時保留 SRT/ASS 等文字字幕支援，所有接收設備會看到相同字幕。"
 }
