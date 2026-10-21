@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha44",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha44/CarSync_Standalone_1.0.0-alpha44.apk",
-  "sha256": "d7b2c850e7e1b3d6443361fa4ba299167048cc90e44c595b8946ea9c80a48be0",
+  "version": "1.0.0-alpha45",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha45/CarSync_Standalone_1.0.0-alpha45.apk",
+  "sha256": "165b9e56c1daabf10e869cb40a943a5be96d9ebb73d817d4d0b901a0befb458c",
   "size": 13483255,
-  "notes": "修正UIS8581車機破圖：CropRenderer在Surface輸入為60fps時實際節流至最高約30fps，避免MediaCodec忽略KEY_FRAME_RATE提示而輸出60fps、造成車機解碼負擔倍增；接收端H.264輸入buffer等待由10ms延長至50ms，不再無聲漏掉參考frame，並新增decoder input timeout drop診斷。保留720p 3Mbps與每秒關鍵幀。"
+  "notes": "主控手機改為直式介面，車機／平板接收端維持橫式；App 會依設備用途自動切換方向。主控頁的播放操作與工具圖示改為等寬排列，改善直式畫面的按鈕間距與點按區域。"
 }
