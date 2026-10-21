@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha49",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha49/CarSync_Standalone_1.0.0-alpha49.apk",
-  "sha256": "4b014440f7f7d2e93f4447750feaa0648298b1c7273c3ee36f006ac3b2375a4c",
+  "version": "1.0.0-alpha50",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha50/CarSync_Standalone_1.0.0-alpha50.apk",
+  "sha256": "d07fe627e236310501eeba2ac0ab1cba6127a00b4bfe2a13e5312c43f2e3eb7d",
   "size": 13491447,
-  "notes": "修正內嵌字幕可選取但不顯示：本機 MKV 的 Blu-ray/PGS 圖形字幕會由 Media3 以 Cue.bitmap 輸出，舊版只處理文字 Cue。新版可依字幕原始位置、尺寸與錨點將圖形字幕合成到手機端轉碼畫面，同時保留 SRT/ASS 等文字字幕支援，所有接收設備會看到相同字幕。"
+  "notes": "提升車機字幕辨識度：PGS／Blu-ray 圖形字幕預設放大約 18%，並在字幕範圍後加入半透明黑色圓角底板；文字字幕同步加大、加粗並強化陰影與高對比底板。字幕仍由手機端合成至雙解析串流，所有接收設備顯示一致。"
 }
