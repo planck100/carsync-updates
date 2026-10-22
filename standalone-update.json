@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha63",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha63/CarSync_Standalone_1.0.0-alpha63.apk",
-  "sha256": "f70e07096d20ef78cfc4a024e5685b341024326d475a7177842e2f8841a18f80",
+  "version": "1.0.0-alpha64",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha64/CarSync_Standalone_1.0.0-alpha64.apk",
+  "sha256": "2bf45d1b7a62203b09ef47815bc4ce4d2798fac6fdcfb96c4ff00ce26ecd7e94",
   "size": 13647095,
-  "notes": "YouTube 清單加入正式約束：原生播放清單最多 50 部且不混入相關推薦；單支影片的自動推薦採滾動清單，最多顯示 15 部並保留最近 5 部供上一部使用，接近尾端時持續補入新推薦。手動加入項目不會被自動清除，手動移除後也不會再次被推薦加入。包含 alpha62 的上一部、實際畫質標籤與強制畫質選單。"
+  "notes": "播放清單改為真正的全螢幕頁面，移除會覆蓋內容的 AlertDialog 完成按鈕列。新增固定頂部工具列：左側返回、中間清單數量、右側加入；只有影片清單區域捲動，並正確避開狀態列與系統導覽列。本機與 YouTube 清單共用新版介面。"
 }
