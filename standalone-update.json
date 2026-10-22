@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha58",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha58/CarSync_Standalone_1.0.0-alpha58.apk",
-  "sha256": "05816812e4dcd2a7e69873efe6b594c0c11c9cba207bf86933ce172c51dce642",
+  "version": "1.0.0-alpha59",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha59/CarSync_Standalone_1.0.0-alpha59.apk",
+  "sha256": "ac877f258efc83f12fb5dc44cecd28d81444fb2e93f669a14dcc812c03103f85",
   "size": 13634807,
-  "notes": "重新設計主控手機直式介面，建立正式產品的資訊層級：目前播放卡改為精簡狀態、標題最多兩行並清楚區分 LIVE／播放／暫停；主要播放鍵縮小間距；直播、清單與更換內容整合為同一列；本機影片的清單、音軌、字幕與更換整合為四等分操作列，不再出現文字截斷；未連線設備改為單行狀態與直接新增按鈕；增加底部安全距離，工具列不再被系統導覽列遮住。包含 alpha57 的直播循環與通知點擊修正。"
+  "notes": "修正播放資訊卡排版：影片名稱改為獨立且固定兩行高度，長短標題切換時控制區不再上下跳動；播放狀態與設備數改為獨立單行。修正一般 YouTube 影片被誤判為直播：不再用是否存在 HLS 網址判斷，而是依 NewPipe StreamType 的 LIVE_STREAM／AUDIO_LIVE_STREAM 判定；每次切換影片也會立即清除上一部的直播狀態。"
 }
