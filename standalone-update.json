@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha55",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha55/CarSync_Standalone_1.0.0-alpha55.apk",
-  "sha256": "fba45bbd8b43494c1870135a57e8f34526241a329c81b91b581c10dcf90f79bb",
-  "size": 13524215,
-  "notes": "介面與 YouTube 相容性修正：本機影片的播放清單、音軌與字幕改為三等分自適應按鈕，避免長音軌名稱把字幕推出畫面；按鈕顯示精簡的目前選項，字幕可直接開啟、切換或關閉。YouTube 在無法建立 Progressive DASH 時，自動切換為 HTTP 直連影像／音訊，不再顯示 0p 或直接停止。"
+  "version": "1.0.0-alpha56",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha56/CarSync_Standalone_1.0.0-alpha56.apk",
+  "sha256": "bd3f8769ca71e8b191ba4bcbbb0853e1650e9da25fa2afdba3ff14d25f5b4629",
+  "size": 13630711,
+  "notes": "YouTube 直播支援：直播來源優先使用 HLS，自動選擇最高可穩定畫質；沒有 HLS 時改用即時 DASH MPD。一般影片仍保留自建 DASH 與 HTTP 相容備援。延續字幕按鈕三等分自適應排列，直式畫面不再被長音軌名稱擠出。"
 }
