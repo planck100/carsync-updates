@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha59",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha59/CarSync_Standalone_1.0.0-alpha59.apk",
-  "sha256": "43810845733b69dcdfd8397d91a2174bc788cf8a1f74ef9725a55d82686cc424",
+  "version": "1.0.0-alpha60",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha60/CarSync_Standalone_1.0.0-alpha60.apk",
+  "sha256": "ababae6da5b6a4bd959aa638220e19d5f595e008f763bd748c3f40dbad6f3558",
   "size": 13638903,
-  "notes": "修正播放資訊卡排版：影片名稱改為獨立且固定兩行高度，長短標題切換時控制區不再上下跳動；播放狀態與設備數改為獨立單行。修正一般 YouTube 影片被誤判為直播：不再用是否存在 HLS 網址判斷，而是依 NewPipe StreamType 的 LIVE_STREAM／AUDIO_LIVE_STREAM 判定；每次切換影片也會立即清除上一部的直播狀態。"
+  "notes": "YouTube 播放資訊卡新增 16:9 封面，影片名稱維持固定兩行；YouTube 播放清單每列加入對應縮圖並保留目前項目高亮。封面使用小圖與記憶體快取，不影響影片串流。包含 alpha59 的固定兩行標題與直播類型判斷修正。"
 }
