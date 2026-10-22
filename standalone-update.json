@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha54",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha54/CarSync_Standalone_1.0.0-alpha54.apk",
-  "sha256": "328192467b56244ccfd923d2630293bc7276aba60adf07c8702cfba6a70ed0be",
-  "size": 13520119,
-  "notes": "播放與介面整合更新：新增最近工作階段自動保存與首頁續播卡片，可恢復 YouTube／本機影片原進度；YouTube 與本機影片統一使用美化播放清單面板，可點選跳播、上移、下移、移除與追加內容；本機播放清單支援自動連播下一部。主控頁面縮短文字、主要控制與進階功能分層，避免長按鈕與畫面擁擠。保留 alpha53 的 1080p 優先智慧畫質與單台接收端自我修復。"
+  "version": "1.0.0-alpha55",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha55/CarSync_Standalone_1.0.0-alpha55.apk",
+  "sha256": "fba45bbd8b43494c1870135a57e8f34526241a329c81b91b581c10dcf90f79bb",
+  "size": 13524215,
+  "notes": "介面與 YouTube 相容性修正：本機影片的播放清單、音軌與字幕改為三等分自適應按鈕，避免長音軌名稱把字幕推出畫面；按鈕顯示精簡的目前選項，字幕可直接開啟、切換或關閉。YouTube 在無法建立 Progressive DASH 時，自動切換為 HTTP 直連影像／音訊，不再顯示 0p 或直接停止。"
 }
