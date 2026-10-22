@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha57",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha57/CarSync_Standalone_1.0.0-alpha57.apk",
-  "sha256": "b2b0ce4dc82edb0c6767a348f48996bda11476a20c4d4b990be610488508ab9b",
+  "sha256": "c2ab216cdda506f0eabb96bd3b1661e83d0ad0ed994a2e0351fb3eade8e15f98",
   "size": 13634807,
   "notes": "修正 YouTube 直播在一小時滑動視窗尾端（約 59:44～59:58）反覆循環：直播不再沿用一般影片進度，偵測時間軸倒退或落後超過 18 秒會自動回到最新直播點；HLS 播放清單停用快取並以約 6 秒直播延遲為目標。主控介面改顯示「LIVE／回到最新」，不再顯示誤導的一小時進度條。CarSync 常駐通知現在可點擊直接回到既有主控頁，不會另開第二個 App。"
 }
