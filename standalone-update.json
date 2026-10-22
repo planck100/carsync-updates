@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha64",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha64/CarSync_Standalone_1.0.0-alpha64.apk",
-  "sha256": "7e73f2d6c672774ff5dfdf5cf1d27070754cacc1921392e0448130fd06165f68",
+  "version": "1.0.0-alpha65",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha65/CarSync_Standalone_1.0.0-alpha65.apk",
+  "sha256": "a5385cf5d7cdc2d2464eb610f9e18ca0c18790f66d0016cea894d8875390f171",
   "size": 13655287,
-  "notes": "播放清單改為真正的全螢幕頁面，移除會覆蓋內容的 AlertDialog 完成按鈕列。新增固定頂部工具列：左側返回、中間清單數量、右側加入；只有影片清單區域捲動，並正確避開狀態列與系統導覽列。本機與 YouTube 清單共用新版介面。"
+  "notes": "App 內更新下載新增常駐進度視窗：按下後立即顯示連線狀態、水平進度條、百分比與已下載／總容量；無法取得檔案大小時改為持續下載動畫。下載完成後依序顯示安全驗證、準備安裝與等待系統確認，下載失敗可直接重試或改用外部下載。包含 alpha64 全螢幕播放清單與固定頂部加入按鈕。"
 }
