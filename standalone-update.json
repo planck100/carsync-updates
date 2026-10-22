@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha64",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha64/CarSync_Standalone_1.0.0-alpha64.apk",
-  "sha256": "2bf45d1b7a62203b09ef47815bc4ce4d2798fac6fdcfb96c4ff00ce26ecd7e94",
-  "size": 13647095,
+  "sha256": "7e73f2d6c672774ff5dfdf5cf1d27070754cacc1921392e0448130fd06165f68",
+  "size": 13655287,
   "notes": "播放清單改為真正的全螢幕頁面，移除會覆蓋內容的 AlertDialog 完成按鈕列。新增固定頂部工具列：左側返回、中間清單數量、右側加入；只有影片清單區域捲動，並正確避開狀態列與系統導覽列。本機與 YouTube 清單共用新版介面。"
 }
