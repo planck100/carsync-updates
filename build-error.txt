@@ -1,0 +1,78 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:javaPreCompileRelease
+> Task :app:generateReleaseResValues
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:mergeReleaseResources
+
+> Task :app:processReleaseMainManifest
+package="app.carsync.cast" found in source AndroidManifest.xml: /home/runner/work/carsync-build/carsync-build/standalone/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="app.carsync.cast" from the source AndroidManifest.xml: /home/runner/work/carsync-build/carsync-build/standalone/AndroidManifest.xml.
+
+> Task :app:packageReleaseResources
+> Task :app:parseReleaseLocalResources
+> Task :app:processReleaseManifest
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs NO-SOURCE
+> Task :app:stripReleaseDebugSymbols NO-SOURCE
+> Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+> Task :app:processReleaseManifestForPackage
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:mergeReleaseArtProfile
+> Task :app:processReleaseResources
+> Task :app:expandReleaseL8ArtProfileWildcards
+
+> Task :app:compileReleaseJavaWithJavac
+/home/runner/work/carsync-build/carsync-build/standalone/src/app/carsync/cast/LocalMediaTranscoder.java:61: error: incompatible types: <anonymous Listener> cannot be converted to LocalMediaTranscoder
+   public void onPlaybackStateChanged(int state){if(state==Player.STATE_READY)publish("本機影片轉碼傳送中",true,false);else if(state==Player.STATE_BUFFERING)publish("手機正在緩衝影片…",false,false);else if(state==Player.STATE_ENDED){publish("影片播放完畢",true,true);service.onLocalMediaEnded(this);}}
+                                                                                                                                                                                                                                                                              ^
+/home/runner/work/carsync-build/carsync-build/standalone/src/app/carsync/cast/YoutubeTranscoder.java:78: error: cannot find symbol
+ static volatile Snapshot current=new Snapshot("尚未啟動",false,"","",false,0,0,0,"尚未準備",Collections.emptyList(),-1);
+                                                                                     ^
+  symbol:   variable Collections
+  location: class YoutubeTranscoder
+/home/runner/work/carsync-build/carsync-build/standalone/src/app/carsync/cast/YoutubeTranscoder.java:82: error: cannot find symbol
+ final List<String> queue=new ArrayList<>();final Map<String,String> queueNames=new LinkedHashMap<>();final Set<String> queued=new LinkedHashSet<>();final ArrayDeque<Long> recentRebuffers=new ArrayDeque<>();volatile boolean closed,advancing,currentLoadHasPlayed,prefetchRunning;volatile int queueIndex=-1,recoveryAttempts,failedCandidates,rebufferCount,sourceHeight,qualityCeiling=720,nextQualityCeiling=720,lastStableCeiling=720,lastPlaybackState=Player.STATE_IDLE,prefetchGeneration;volatile long readySince,upgradeBlockedUntil;volatile int appliedTrackHeight=-1;volatile String nextUrl="",currentPageUrl="",title="",quality="",loadReason="normal",prefetchStatus="尚未準備";volatile PreparedNext preparedNext;volatile CacheWriter activeVideoWriter,activeAudioWriter;ExoPlayer player;final Runnable bufferFallback=this::fallbackQuality;final Runnable qualityMonitor=this::monitorQuality;
+                                                                                    ^
+  symbol:   class LinkedHashMap
+  location: class YoutubeTranscoder
+/home/runner/work/carsync-build/carsync-build/standalone/src/app/carsync/cast/YoutubeTranscoder.java:189: error: cannot find symbol
+ void publish(String message,boolean ready,boolean paused){long buffered=bufferedAhead();List<String> names=new ArrayList<>();int index;synchronized(queue){index=queueIndex;for(String url:queue){String name=queueNames.get(url);names.add(name==null||name.trim().isEmpty()?url:name);}}current=new Snapshot(message,ready,title,quality,paused,buffered,rebufferCount,sourceHeight,prefetchStatus,Collections.unmodifiableList(names),index);ProjectionService.status=message+(title.isEmpty()?"":" · "+title);MainActivity.refreshSoon();}
+                                                                                                                                                                                                                                                                                                                                                                                                      ^
+  symbol:   variable Collections
+  location: class YoutubeTranscoder
+/home/runner/work/carsync-build/carsync-build/standalone/src/app/carsync/cast/YoutubeTranscoder.java:190: error: cannot find symbol
+ void close(){closed=true;DiagnosticLog.add("YT","closed");cancelPrefetch("closed");service.ui.removeCallbacks(bufferFallback);service.ui.removeCallbacks(qualityMonitor);worker.shutdownNow();prefetchWorker.shutdownNow();if(Looper.myLooper()==Looper.getMainLooper())releasePlayer();else service.ui.post(this::releasePlayer);releaseLocks();current=new Snapshot("YouTube 已停止",false,"","",false,0,0,0,"尚未準備",Collections.emptyList(),-1);}
+                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+  symbol:   variable Collections
+  location: class YoutubeTranscoder
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+5 errors
+
+> Task :app:compileReleaseJavaWithJavac FAILED
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1792682768686.json
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 25s
+19 actionable tasks: 19 executed
+
+commit=24d2b0a0be6646cdf481df5e26e70a818731ffee
