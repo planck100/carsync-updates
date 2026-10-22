@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha50",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha50/CarSync_Standalone_1.0.0-alpha50.apk",
-  "sha256": "d07fe627e236310501eeba2ac0ab1cba6127a00b4bfe2a13e5312c43f2e3eb7d",
-  "size": 13491447,
-  "notes": "提升車機字幕辨識度：PGS／Blu-ray 圖形字幕預設放大約 18%，並在字幕範圍後加入半透明黑色圓角底板；文字字幕同步加大、加粗並強化陰影與高對比底板。字幕仍由手機端合成至雙解析串流，所有接收設備顯示一致。"
+  "version": "1.0.0-alpha51",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha51/CarSync_Standalone_1.0.0-alpha51.apk",
+  "sha256": "a9ee5c197f09774fd0ad674a69bcc2467c7891abb7c2e95b8fadb2aa42aac03d",
+  "size": 13495543,
+  "notes": "YouTube 穩定度更新：每部影片鎖定單一 DASH 畫質，避免播放中頻繁切換；下一部預載改為背景低優先，現有緩衝低於 30 秒立即讓路、達 45 秒才恢復；720p／1080p 傳送碼率調整為 2.4／4.5 Mbps；聲音採獨立優先佇列。另修正從桌面與 YouTube 分享開啟時出現兩個 CarSync 工作。"
 }
