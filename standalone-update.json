@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha62",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha62/CarSync_Standalone_1.0.0-alpha62.apk",
-  "sha256": "d5dfeb90c9f0b4b4f9d11db7c01ab58828d5057e8295aa016273419f28eb88b0",
+  "sha256": "3a7e380a4bb3cf9cadf0eaf65c46689971b6cea59d27d253c4861448d3505133",
   "size": 13647095,
   "notes": "YouTube 控制列新增上一部，並完整連接播放清單上一項功能。現在播放標題右側新增實際畫質標籤與畫質策略下拉選單，可立即切換自動（1080p 優先）、固定 1080p、固定 720p 或固定 480p；固定模式不會自行降低畫質。"
 }
