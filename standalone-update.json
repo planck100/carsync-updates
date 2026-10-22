@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha53",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha53/CarSync_Standalone_1.0.0-alpha53.apk",
-  "sha256": "f605d83276d2ae119ccb706ea74dc44f486e3704946ad77d1d5a0171e4ad3b8e",
-  "size": 13503735,
-  "notes": "YouTube 智慧畫質：預設優先 1080p，網路波動時在同一 DASH 播放器內暫降 720p；720p 穩定 60 秒、緩衝與頻寬充足且設備無壅塞／過熱時自動無縫升回 1080p。新增每台接收設備獨立影像重同步、自我修復、健康與佇列狀態；播放詳情可複製最近 2 分鐘精簡診斷。此版通訊協定已更新，主控與所有接收端需使用同一版本。"
+  "version": "1.0.0-alpha54",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha54/CarSync_Standalone_1.0.0-alpha54.apk",
+  "sha256": "328192467b56244ccfd923d2630293bc7276aba60adf07c8702cfba6a70ed0be",
+  "size": 13520119,
+  "notes": "播放與介面整合更新：新增最近工作階段自動保存與首頁續播卡片，可恢復 YouTube／本機影片原進度；YouTube 與本機影片統一使用美化播放清單面板，可點選跳播、上移、下移、移除與追加內容；本機播放清單支援自動連播下一部。主控頁面縮短文字、主要控制與進階功能分層，避免長按鈕與畫面擁擠。保留 alpha53 的 1080p 優先智慧畫質與單台接收端自我修復。"
 }
