@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha65",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha65/CarSync_Standalone_1.0.0-alpha65.apk",
-  "sha256": "151a8b5450782d2ddf3b09e3e9db58cd83e253eb64836c7c6503bae1316624f5",
+  "version": "1.0.0-alpha66",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha66/CarSync_Standalone_1.0.0-alpha66.apk",
+  "sha256": "e5974ae9aeeb995ad477fcd45114cf74e8d56f7f1b4d680133b7bfb4bc85dc4c",
   "size": 13655287,
-  "notes": "App 內更新下載新增常駐進度視窗：按下後立即顯示連線狀態、水平進度條、百分比與已下載／總容量；無法取得檔案大小時改為持續下載動畫。下載完成後依序顯示安全驗證、準備安裝與等待系統確認，下載失敗可直接重試或改用外部下載。包含 alpha64 全螢幕播放清單與固定頂部加入按鈕。"
+  "notes": "修正 YouTube 畫質選單只顯示說明、無法選擇的問題。現在可固定選擇 1080p、720p、480p，或使用自動（優先 1080p）；選擇後立即套用、顯示確認訊息並永久記住設定。包含 alpha65 的 App 內更新下載進度條。"
 }
