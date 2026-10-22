@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha52",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha52/CarSync_Standalone_1.0.0-alpha52.apk",
-  "sha256": "86747585bd61f63d0108ffede321758ad6b3e467e0d20692152fe91637a9b93e",
-  "size": 13499639,
-  "notes": "加入車機方向盤上一部／下一部控制：接收端同時監聽標準 Android MediaSession 與媒體 KeyEvent，透過既有 CarSync TCP 連線將命令送回手機，具 400ms 防連點且只接受目前指定播放聲音的設備。YouTube 支援播放歷史上一部與預載下一部；本機影片可在檔案選擇器一次選取多部建立播放清單。"
+  "version": "1.0.0-alpha53",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha53/CarSync_Standalone_1.0.0-alpha53.apk",
+  "sha256": "f605d83276d2ae119ccb706ea74dc44f486e3704946ad77d1d5a0171e4ad3b8e",
+  "size": 13503735,
+  "notes": "YouTube 智慧畫質：預設優先 1080p，網路波動時在同一 DASH 播放器內暫降 720p；720p 穩定 60 秒、緩衝與頻寬充足且設備無壅塞／過熱時自動無縫升回 1080p。新增每台接收設備獨立影像重同步、自我修復、健康與佇列狀態；播放詳情可複製最近 2 分鐘精簡診斷。此版通訊協定已更新，主控與所有接收端需使用同一版本。"
 }
