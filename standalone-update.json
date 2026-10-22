@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha60",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha60/CarSync_Standalone_1.0.0-alpha60.apk",
-  "sha256": "03545b4a1f9326359d77df8a1d9d3e7c25f60a7a81d1ccf794caafe60ba6af6d",
+  "version": "1.0.0-alpha61",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha61/CarSync_Standalone_1.0.0-alpha61.apk",
+  "sha256": "b5fc93ef97466ca13ae5a23e68ff82c3cbeb592bc993f7694020b221ddd9ff0d",
   "size": 13638903,
-  "notes": "YouTube 播放資訊卡新增 16:9 封面，影片名稱維持固定兩行；YouTube 播放清單每列加入對應縮圖並保留目前項目高亮。封面使用小圖與記憶體快取，不影響影片串流。包含 alpha59 的固定兩行標題與直播類型判斷修正。"
+  "notes": "播放清單改為緊湊一致的商業化版型：序號或目前播放標記置左、標題固定兩行、調整功能改成小型尾端選單，移除大型扳手按鈕並縮短多餘留白。YouTube 播放卡與播放清單均顯示 16:9 封面並使用記憶體快取；包含固定兩行標題與直播誤判修正。"
 }
