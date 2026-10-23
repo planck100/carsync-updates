@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha69",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha69/CarSync_Standalone_1.0.0-alpha69.apk",
-  "sha256": "57fbfe2f68fbd5e396ddb2550018c9cbfff128160271cd5a3dc34b129e9d5dfe",
+  "version": "1.0.0-alpha70",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha70/CarSync_Standalone_1.0.0-alpha70.apk",
+  "sha256": "7b1231c93a5e74cadc571078f00602331718599dfd1abb77375003f93083381e",
   "size": 13663479,
-  "notes": "改善 YouTube LOGIN_REQUIRED／「確認不是機器人」錯誤：偵測封鎖後自動以 IPv4 優先路徑重試一次，避免部分 IPv6 行動網路出口遭封鎖；兩條路徑都失敗時立即停止重試並顯示切換網路或重新取得 IP 的中文提示，避免反覆請求加重限制。"
+  "notes": "新增可選的 YouTube 登入工作階段：設定中可開啟 Google 登入頁、查看登入狀態及登出；CarSync 不讀取或儲存密碼，只使用 Android WebView 的安全 Cookie，並在 NewPipe 擷取請求加入登入驗證。登入失效時提供中文提示，並保留 IPv4 與換 IP 備援。"
 }
