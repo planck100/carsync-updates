@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha71",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha71/CarSync_Standalone_1.0.0-alpha71.apk",
-  "sha256": "c161f6c6b0d3de898f91961fe15f67faed21957f334c52d81247208435c0a1da",
-  "size": 13663479,
-  "notes": "修正 YouTube 登入視窗點選帳號欄位時未顯示軟鍵盤：允許登入 WebView 使用輸入法、點擊欄位時主動取得焦點並喚起鍵盤，鍵盤開啟時登入視窗會自動縮放。"
+  "version": "1.0.0-alpha72",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha72/CarSync_Standalone_1.0.0-alpha72.apk",
+  "sha256": "6d2f38e73f9c167e34561a32d715e7b669aca64619264d52dedb6e755425cfd5",
+  "size": 13667575,
+  "notes": "新增車機快轉與倒轉控制：支援方向盤／車機 MEDIA_FAST_FORWARD、MEDIA_REWIND、STEP_FORWARD、STEP_BACKWARD，並在接收端側邊面板加入前後 10 秒按鈕。指令由車機回傳主手機執行 YouTube／本機影片跳轉，跳轉後會清空舊佇列並重新同步關鍵幀。"
 }
