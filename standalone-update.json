@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha70",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha70/CarSync_Standalone_1.0.0-alpha70.apk",
-  "sha256": "7b1231c93a5e74cadc571078f00602331718599dfd1abb77375003f93083381e",
+  "sha256": "a3faad5077dc8bed263818b5958ef0bb6f71f13e986a26d07eb583fbebad3810",
   "size": 13663479,
   "notes": "新增可選的 YouTube 登入工作階段：設定中可開啟 Google 登入頁、查看登入狀態及登出；CarSync 不讀取或儲存密碼，只使用 Android WebView 的安全 Cookie，並在 NewPipe 擷取請求加入登入驗證。登入失效時提供中文提示，並保留 IPv4 與換 IP 備援。"
 }
