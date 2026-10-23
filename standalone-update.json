@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha72",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha72/CarSync_Standalone_1.0.0-alpha72.apk",
-  "sha256": "6d2f38e73f9c167e34561a32d715e7b669aca64619264d52dedb6e755425cfd5",
+  "version": "1.0.0-alpha73",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha73/CarSync_Standalone_1.0.0-alpha73.apk",
+  "sha256": "78813684ec5eea543460a7edf7b47c4c95c2e3deef032de0fed01d048ecc73ec",
   "size": 13667575,
-  "notes": "新增車機快轉與倒轉控制：支援方向盤／車機 MEDIA_FAST_FORWARD、MEDIA_REWIND、STEP_FORWARD、STEP_BACKWARD，並在接收端側邊面板加入前後 10 秒按鈕。指令由車機回傳主手機執行 YouTube／本機影片跳轉，跳轉後會清空舊佇列並重新同步關鍵幀。"
+  "notes": "修正車機方向盤上一部／下一部無法轉送：新增專用 MEDIA_BUTTON 接收器、主動取得媒體音訊焦點並註冊 MediaSession 接收目標；相容 NEXT／PREVIOUS、FAST_FORWARD／REWIND 及常見 SKIP／STEP 鍵碼，全部依方向轉成上一部或下一部送回主手機。"
 }
