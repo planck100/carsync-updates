@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha69",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha69/CarSync_Standalone_1.0.0-alpha69.apk",
-  "sha256": "1ae4b0c69499a291fe0cccdb9c31a63daa7a6c1e08b1d263e212127f0b3b3677",
-  "size": 13655287,
+  "sha256": "57fbfe2f68fbd5e396ddb2550018c9cbfff128160271cd5a3dc34b129e9d5dfe",
+  "size": 13663479,
   "notes": "改善 YouTube LOGIN_REQUIRED／「確認不是機器人」錯誤：偵測封鎖後自動以 IPv4 優先路徑重試一次，避免部分 IPv6 行動網路出口遭封鎖；兩條路徑都失敗時立即停止重試並顯示切換網路或重新取得 IP 的中文提示，避免反覆請求加重限制。"
 }
