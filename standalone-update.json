@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha73",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha73/CarSync_Standalone_1.0.0-alpha73.apk",
-  "sha256": "78813684ec5eea543460a7edf7b47c4c95c2e3deef032de0fed01d048ecc73ec",
-  "size": 13667575,
-  "notes": "修正車機方向盤上一部／下一部無法轉送：新增專用 MEDIA_BUTTON 接收器、主動取得媒體音訊焦點並註冊 MediaSession 接收目標；相容 NEXT／PREVIOUS、FAST_FORWARD／REWIND 及常見 SKIP／STEP 鍵碼，全部依方向轉成上一部或下一部送回主手機。"
+  "version": "1.0.0-alpha74",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha74/CarSync_Standalone_1.0.0-alpha74.apk",
+  "sha256": "f761a3102baf143ce30fed3df2202268d04cf9173ab246c0bcb6818a5a2a66c1",
+  "size": 13675767,
+  "notes": "修正 UIS8581 等車機方向盤按鍵無法送達：新增 FYT com.syu.ms 方向盤 IPC 橋接、23 種車機廠商按鍵廣播攔截與全域按鍵無障礙備援；只轉送上一部／下一部。播放設備設定新增方向盤狀態、授權與按鍵學習，可在非標準鍵碼車機各設定一次後固定使用。"
 }
