@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha74",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha74/CarSync_Standalone_1.0.0-alpha74.apk",
-  "sha256": "f761a3102baf143ce30fed3df2202268d04cf9173ab246c0bcb6818a5a2a66c1",
+  "version": "1.0.0-alpha75",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha75/CarSync_Standalone_1.0.0-alpha75.apk",
+  "sha256": "2d56aee1540ddf8319cf1917f1bbae21d401923195b0100638e4844b49b0ad54",
   "size": 13675767,
-  "notes": "修正 UIS8581 等車機方向盤按鍵無法送達：新增 FYT com.syu.ms 方向盤 IPC 橋接、23 種車機廠商按鍵廣播攔截與全域按鍵無障礙備援；只轉送上一部／下一部。播放設備設定新增方向盤狀態、授權與按鍵學習，可在非標準鍵碼車機各設定一次後固定使用。"
+  "notes": "方向盤控制改為沿用車機原廠學習設定，不再重複學習；新增車機端測試上一部／下一部、原廠方向盤設定入口、FYT狀態、最近原始鍵碼與轉送結果。YouTube直播改用約12秒安全緩衝，HLS播放清單時間軸滑動不再誤判並反覆跳回直播邊緣，只有落後超過30秒才校正。"
 }
