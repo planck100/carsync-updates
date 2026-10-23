@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha68",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha68/CarSync_Standalone_1.0.0-alpha68.apk",
-  "sha256": "9bba254b031b2f6d2e0f56787b182314d380c67818189f0cea97cc9a00115632",
+  "sha256": "ca09bfdc1f2edbcc50691bd1dcf824ad03f015c8e0989fd313be93c756a1514d",
   "size": 13655287,
   "notes": "修正 YouTube 畫質膠囊按鈕上緣外框被裁切：標題列改為固定安全高度、垂直置中、取消上下外距並停用子元件裁切，確保 1080p 與自動選單的完整圓角外框。保留 alpha67 的緊湊同列排版與固定畫質功能。"
 }
