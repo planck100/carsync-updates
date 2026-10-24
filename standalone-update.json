@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha77",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha77/CarSync_Standalone_1.0.0-alpha77.apk",
-  "sha256": "3eb5f32d2afc91bc6652441309a359cac9e23ca39a79db4a4c08ab2c06e9f614",
-  "size": 13679863,
-  "notes": "方向盤控制加入TCP與UDP雙路回傳、手機端去重及ACK確認。車機按下1005／1006後可直接顯示手機是否收到並執行；手機與車機診斷日誌會標示TCP、UDP及ACK結果。主畫面排版維持不變。"
+  "version": "1.0.0-alpha78",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha78/CarSync_Standalone_1.0.0-alpha78.apk",
+  "sha256": "83ed6a0de5ad696ba00422fef0de2cbcb11030959521ee84733b9c343c99288b",
+  "size": 13683959,
+  "notes": "車機端既有「連線檢查」新增「查看 Log」，可直接瀏覽最近5分鐘事件並複製完整車機診斷；內容包含連線、畫面、音訊、方向盤原始鍵碼、TCP／UDP傳送與手機ACK。功能放在原視窗內，不增加主畫面按鈕或改動排版。"
 }
