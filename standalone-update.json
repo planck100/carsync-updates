@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha79",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha79/CarSync_Standalone_1.0.0-alpha79.apk",
-  "sha256": "b8096fc4a3eb3184950e7d0e1e57ec4bfdda6b4b35a0b04ceeb5d562eec20edb",
+  "version": "1.0.0-alpha80",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha80/CarSync_Standalone_1.0.0-alpha80.apk",
+  "sha256": "79c9dd4ffacab5a65c2d59a2ccb1160021dd24009ddadf39b39e85c8e31ad79c",
   "size": 13688055,
-  "notes": "修正方向盤測試視窗選項可能隱藏；車機設定頂部提供方向盤控制及查看車機Log，設定面板不再6秒自動收起，右上狀態點按開設定、長按開Log。NWD原廠廣播支援byte/int/short/long/字串及1005／1006完整鍵碼，記錄原始值與型別；實體方向盤仍需車機驗證。"
+  "notes": "依車機Log修正方向盤指令在主執行緒傳送導致NetworkOnMainThreadException：改由背景單一有界佇列依序傳送TCP／UDP，保留去重及手機ACK，排程成功不再顯示為已送達。重連失敗關閉舊socket，保留手機連線遭拒的提示及錯誤紀錄；無解碼器時不再重複記錄假重設。實車按鍵與手機服務連線仍需驗證。"
 }
