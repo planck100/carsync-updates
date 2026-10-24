@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha78",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha78/CarSync_Standalone_1.0.0-alpha78.apk",
-  "sha256": "83ed6a0de5ad696ba00422fef0de2cbcb11030959521ee84733b9c343c99288b",
-  "size": 13683959,
-  "notes": "車機端既有「連線檢查」新增「查看 Log」，可直接瀏覽最近5分鐘事件並複製完整車機診斷；內容包含連線、畫面、音訊、方向盤原始鍵碼、TCP／UDP傳送與手機ACK。功能放在原視窗內，不增加主畫面按鈕或改動排版。"
+  "version": "1.0.0-alpha79",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha79/CarSync_Standalone_1.0.0-alpha79.apk",
+  "sha256": "b8096fc4a3eb3184950e7d0e1e57ec4bfdda6b4b35a0b04ceeb5d562eec20edb",
+  "size": 13688055,
+  "notes": "修正方向盤測試視窗選項可能隱藏；車機設定頂部提供方向盤控制及查看車機Log，設定面板不再6秒自動收起，右上狀態點按開設定、長按開Log。NWD原廠廣播支援byte/int/short/long/字串及1005／1006完整鍵碼，記錄原始值與型別；實體方向盤仍需車機驗證。"
 }
