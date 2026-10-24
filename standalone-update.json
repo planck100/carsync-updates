@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha75",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha75/CarSync_Standalone_1.0.0-alpha75.apk",
-  "sha256": "2d56aee1540ddf8319cf1917f1bbae21d401923195b0100638e4844b49b0ad54",
+  "version": "1.0.0-alpha76",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha76/CarSync_Standalone_1.0.0-alpha76.apk",
+  "sha256": "1350ba8c6016f830b9f049d404351395963a5e187b7746929bba4325459ce957",
   "size": 13675767,
-  "notes": "方向盤控制改為沿用車機原廠學習設定，不再重複學習；新增車機端測試上一部／下一部、原廠方向盤設定入口、FYT狀態、最近原始鍵碼與轉送結果。YouTube直播改用約12秒安全緩衝，HLS播放清單時間軸滑動不再誤判並反覆跳回直播邊緣，只有落後超過30秒才校正。"
+  "notes": "加入UIS8581／NWD車機原廠方向盤廣播碼：1005對應下一部、1006對應上一部。沿用原廠方向盤學習設定，收到按鍵後直接轉送手機切換CarSync播放清單。"
 }
