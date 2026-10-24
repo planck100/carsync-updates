@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha80",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha80/CarSync_Standalone_1.0.0-alpha80.apk",
-  "sha256": "79c9dd4ffacab5a65c2d59a2ccb1160021dd24009ddadf39b39e85c8e31ad79c",
-  "size": 13688055,
-  "notes": "依車機Log修正方向盤指令在主執行緒傳送導致NetworkOnMainThreadException：改由背景單一有界佇列依序傳送TCP／UDP，保留去重及手機ACK，排程成功不再顯示為已送達。重連失敗關閉舊socket，保留手機連線遭拒的提示及錯誤紀錄；無解碼器時不再重複記錄假重設。實車按鍵與手機服務連線仍需驗證。"
+  "version": "1.0.0-alpha81",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha81/CarSync_Standalone_1.0.0-alpha81.apk",
+  "sha256": "5c3d0dbe6b167bee245977cc840ca8f1fd3486bdb414809e4871d3395dfc9b7c",
+  "size": 13692151,
+  "notes": "加強連續切換影片穩定性：開始解析前先釋放舊播放器，切換期間不堆積上一部／下一部指令；解析及播放器回呼加入世代與實例檢查，舊READY／錯誤不得解鎖或覆蓋新影片。播放狀態統一回主執行緒讀取；遠端指令綁定接收時的播放器，停止後不操作已替換實例。新增切換世代及連按鎖定測試。手機異常仍需實機驗證與Log確認。"
 }
