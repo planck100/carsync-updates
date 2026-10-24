@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha81",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha81/CarSync_Standalone_1.0.0-alpha81.apk",
-  "sha256": "5c3d0dbe6b167bee245977cc840ca8f1fd3486bdb414809e4871d3395dfc9b7c",
-  "size": 13692151,
-  "notes": "加強連續切換影片穩定性：開始解析前先釋放舊播放器，切換期間不堆積上一部／下一部指令；解析及播放器回呼加入世代與實例檢查，舊READY／錯誤不得解鎖或覆蓋新影片。播放狀態統一回主執行緒讀取；遠端指令綁定接收時的播放器，停止後不操作已替換實例。新增切換世代及連按鎖定測試。手機異常仍需實機驗證與Log確認。"
+  "version": "1.0.0-alpha82",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha82/CarSync_Standalone_1.0.0-alpha82.apk",
+  "sha256": "04031beca3874367a51c8722524dad4e705fd14849c22f277eefa36aa30976f8",
+  "size": 13700343,
+  "notes": "YouTube方向盤連按優化：停按250ms合併到最終目標，解析中仍可變更目標；前景解析最多一個執行中及一個可替換待辦，舊結果作廢。TCP／UDP共用唯一按鍵編號，手機依編號去重；連線識別碼隔離斷線前封包，過期排隊指令不補送。車機短暫顯示收到、目標、切換中、手機首幀播放確認；切換30秒逾時可再操作。新增連按、反向、最新工作替換、實際TCP／UDP迴路與重連識別測試。需手機與車機都更新。"
 }
