@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha82",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha82/CarSync_Standalone_1.0.0-alpha82.apk",
-  "sha256": "04031beca3874367a51c8722524dad4e705fd14849c22f277eefa36aa30976f8",
-  "size": 13700343,
-  "notes": "YouTube方向盤連按優化：停按250ms合併到最終目標，解析中仍可變更目標；前景解析最多一個執行中及一個可替換待辦，舊結果作廢。TCP／UDP共用唯一按鍵編號，手機依編號去重；連線識別碼隔離斷線前封包，過期排隊指令不補送。車機短暫顯示收到、目標、切換中、手機首幀播放確認；切換30秒逾時可再操作。新增連按、反向、最新工作替換、實際TCP／UDP迴路與重連識別測試。需手機與車機都更新。"
+  "version": "1.0.0-alpha83",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha83/CarSync_Standalone_1.0.0-alpha83.apk",
+  "sha256": "647343a780b1df908b49fc92bd2fcfcdc729f6659e780bf12a56e073793100f2",
+  "size": 13704439,
+  "notes": "針對連按三次下一部卡住補強：連按選目標時不再逐次釋放播放器與清理串流，停按250ms提交後集中處理；切換世代取消舊解析、預載與播放器HTTP請求，取消後不再重試，避免舊網路工作阻塞最新目標。新增解析排隊與播放器釋放耗時Log。通過阻塞socket取消後執行最新目標測試；實車卡住原因及穩定性仍需Log與實測確認。"
 }
