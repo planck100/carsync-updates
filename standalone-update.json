@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha93",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha93/CarSync_Standalone_1.0.0-alpha93.apk",
-  "sha256": "ba1238cf0101eea8a570db066a755002cba0158d6ff62f39fc19ac4777551671",
-  "size": 13765879,
-  "notes": "修正手動加入待播影片未讀取標題與縮圖：加入後立即以小型 oEmbed 中繼資料請求背景取得資訊，不必等輪到播放或媒體預載。依加入順序讀取、合併同一影片重複要求；移除或更換工作階段會取消並丟棄過期結果。開啟清單及恢復保存清單時補讀既有手動項目，清單畫面自動更新。項目選單新增「重新讀取標題與縮圖」，失敗顯示明確狀態並可重試。新增多部加入、重複合併、移除後舊回應、重加、失敗重試及圖片網址測試。"
+  "version": "1.0.0-alpha94",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha94/CarSync_Standalone_1.0.0-alpha94.apk",
+  "sha256": "2294a7d9bb799cd199fcd805e76f78cae01fa0f185f7250523fcb6072f7349ba",
+  "size": 13769975,
+  "notes": "設定頁重新設計：深色分組卡片、右側開關、短標題加獨立說明，修正長句被擠成單字一行；內容可捲動，完成按鈕固定在下方。保留省電、清單接續推薦、排除直播、YouTube 登入登出、更新與裝置用途功能。YouTube 推薦首頁精簡工具列：單行 YouTube 標題、圖示搜尋、右上更多選單整合首頁／上一頁／重新整理／貼上連結，增加影片可視空間；改善大字體下標題與按鈕斷字。手機大字體及顯示縮放效果待實機確認。"
 }
