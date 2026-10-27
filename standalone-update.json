@@ -2,7 +2,7 @@
   "package": "app.carsync.cast",
   "version": "1.0.0-alpha86",
   "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha86/CarSync_Standalone_1.0.0-alpha86.apk",
-  "sha256": "e552e4525318354fae70c7180d4ef8e3d1d02e56be41576db48597e91436861c",
+  "sha256": "0eaa3160fa31ac5f240e84c2799aa39cbea790752df29d1a5c160d8e53020398",
   "size": 13729015,
   "notes": "接續播放卡片加入縮圖、進度與重新播放；直播接續改為重新連線。YouTube 保存清單順序、目前位置、手動加入項目、去重與略過紀錄、原清單分頁游標，接續時沿用清單；載入未完成不覆蓋最後可接續紀錄。手機及舊版車機上一部／下一部共用方向盤目標合併流程，載入中可繼續選擇；修正暫停後切片未恢復影像輸出。設定新增「推薦只接續一般影片（排除直播）」預設開啟，不影響主動開啟或原清單中的直播。新增清單完整還原、75部清單、分頁游標、損壞資料、推薦過濾與連續選擇測試。完整清單記錄需從本版開始保存；仍由使用者按接續播放。"
 }
