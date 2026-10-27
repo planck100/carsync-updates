@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha96",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha96/CarSync_Standalone_1.0.0-alpha96.apk",
-  "sha256": "3fd3c60519dfae4173d31f64ec36a7d7d031b357be0f9d4fc00068c1e593b8df",
-  "size": 13774071,
-  "notes": "播放開始後即背景補齊後續15部推薦，切換及刪除後持續補充，已播放歷史與手動待播分開計算；推薦不足時最多讀取三頁同作者搜尋結果，保留驗證限制與失敗冷卻。手動加入依加入順序優先排列於目前影片之後、推薦之前；既有推薦可移入手動待播並去重。下一部目標變動時取消舊預載，緩衝足夠時改預載真正下一部，再加入第二部則保留第一部的預載。原播放清單維持原順序，結束後依設定接推薦。新增FIFO、推薦提升、重複加入、歷史重加、15部推薦獨立計數等回歸測試。"
+  "version": "1.0.0-alpha97",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha97/CarSync_Standalone_1.0.0-alpha97.apk",
+  "sha256": "38c7edad6cbc34db97bcb6a197cdfb79a4258895ecb64617f4d2df0c92d444df",
+  "size": 13786359,
+  "notes": "統一所有 YouTube 來源為最近5部歷史＋目前1部＋手動最多30部＋自動待播9部，最多45部。原播放清單以9部滑動視窗依序補齊，保留當頁未排入項目及續載游標，恢復播放亦套用限制。手動待播先背景確認類型、依加入順序優先排入；確認中亦計入30部上限。直播設定改為「允許直播加入待播」，統一套用推薦、原清單、手動加入；關閉時移除尚未播放的直播，保留目前與歷史並更新預載。重複追蹤資料亦設定上限。新增45部上限、150部原清單連續順序、跨頁暫存及恢復、直播過濾、手動確認順序與舊回呼取消等回歸測試。"
 }
