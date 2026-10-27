@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha95",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha95/CarSync_Standalone_1.0.0-alpha95.apk",
-  "sha256": "dada70762ef72432d980ef0781b227a0b9ff3dd69bed196c142f96ce09159a58",
-  "size": 13769975,
-  "notes": "修正非清單下一部因重新解析目前影片遭 LOGIN_REQUIRED 而未進入備援：已有影片資訊但推薦用盡時，直接使用已取得的作者資訊搜尋，不再重取目前影片串流。補上特定驗證例外的搜尋備援路徑，保留一般網路錯誤及取消語意；已預載影片亦保留來源資訊供後續推薦使用。驗證受限時暫停相同來源的重複解析；搜尋也要求驗證時顯示清楚訊息並停止一秒重試，30秒後再允許手動重試。新增驗證例外仍觸發搜尋、去重與直播過濾、一般網路錯誤不誤轉搜尋、取消不啟動搜尋等回歸測試。保留目前播放與已建立清單。YouTube 對實際搜尋及下一部來源的限制仍需手機實測。"
+  "version": "1.0.0-alpha96",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha96/CarSync_Standalone_1.0.0-alpha96.apk",
+  "sha256": "3fd3c60519dfae4173d31f64ec36a7d7d031b357be0f9d4fc00068c1e593b8df",
+  "size": 13774071,
+  "notes": "播放開始後即背景補齊後續15部推薦，切換及刪除後持續補充，已播放歷史與手動待播分開計算；推薦不足時最多讀取三頁同作者搜尋結果，保留驗證限制與失敗冷卻。手動加入依加入順序優先排列於目前影片之後、推薦之前；既有推薦可移入手動待播並去重。下一部目標變動時取消舊預載，緩衝足夠時改預載真正下一部，再加入第二部則保留第一部的預載。原播放清單維持原順序，結束後依設定接推薦。新增FIFO、推薦提升、重複加入、歷史重加、15部推薦獨立計數等回歸測試。"
 }
