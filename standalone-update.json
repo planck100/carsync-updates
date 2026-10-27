@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha94",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha94/CarSync_Standalone_1.0.0-alpha94.apk",
-  "sha256": "2294a7d9bb799cd199fcd805e76f78cae01fa0f185f7250523fcb6072f7349ba",
+  "version": "1.0.0-alpha95",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha95/CarSync_Standalone_1.0.0-alpha95.apk",
+  "sha256": "dada70762ef72432d980ef0781b227a0b9ff3dd69bed196c142f96ce09159a58",
   "size": 13769975,
-  "notes": "設定頁重新設計：深色分組卡片、右側開關、短標題加獨立說明，修正長句被擠成單字一行；內容可捲動，完成按鈕固定在下方。保留省電、清單接續推薦、排除直播、YouTube 登入登出、更新與裝置用途功能。YouTube 推薦首頁精簡工具列：單行 YouTube 標題、圖示搜尋、右上更多選單整合首頁／上一頁／重新整理／貼上連結，增加影片可視空間；改善大字體下標題與按鈕斷字。手機大字體及顯示縮放效果待實機確認。"
+  "notes": "修正非清單下一部因重新解析目前影片遭 LOGIN_REQUIRED 而未進入備援：已有影片資訊但推薦用盡時，直接使用已取得的作者資訊搜尋，不再重取目前影片串流。補上特定驗證例外的搜尋備援路徑，保留一般網路錯誤及取消語意；已預載影片亦保留來源資訊供後續推薦使用。驗證受限時暫停相同來源的重複解析；搜尋也要求驗證時顯示清楚訊息並停止一秒重試，30秒後再允許手動重試。新增驗證例外仍觸發搜尋、去重與直播過濾、一般網路錯誤不誤轉搜尋、取消不啟動搜尋等回歸測試。保留目前播放與已建立清單。YouTube 對實際搜尋及下一部來源的限制仍需手機實測。"
 }
