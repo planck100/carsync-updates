@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha85",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha85/CarSync_Standalone_1.0.0-alpha85.apk",
-  "sha256": "7387b16de695119aba37181d3f3914d38cb89b83aa55f2403aa9153e8fc4800e",
-  "size": 13716727,
-  "notes": "修正更新完成後重新開啟：接收套件取代完成事件與 App 內安裝成功回報，嘗試開啟 CarSync 並沿用既有角色與配對自動重連；同版本只處理一次。Android 阻擋自動開啟時保留「開啟 CarSync」通知，實際回到 App 才清除；App 內更新前可授予通知權限，拒絕仍能更新。系統安裝確認及背景啟動限制仍適用；不自動恢復螢幕擷取授權。"
+  "version": "1.0.0-alpha86",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha86/CarSync_Standalone_1.0.0-alpha86.apk",
+  "sha256": "e552e4525318354fae70c7180d4ef8e3d1d02e56be41576db48597e91436861c",
+  "size": 13729015,
+  "notes": "接續播放卡片加入縮圖、進度與重新播放；直播接續改為重新連線。YouTube 保存清單順序、目前位置、手動加入項目、去重與略過紀錄、原清單分頁游標，接續時沿用清單；載入未完成不覆蓋最後可接續紀錄。手機及舊版車機上一部／下一部共用方向盤目標合併流程，載入中可繼續選擇；修正暫停後切片未恢復影像輸出。設定新增「推薦只接續一般影片（排除直播）」預設開啟，不影響主動開啟或原清單中的直播。新增清單完整還原、75部清單、分頁游標、損壞資料、推薦過濾與連續選擇測試。完整清單記錄需從本版開始保存；仍由使用者按接續播放。"
 }
