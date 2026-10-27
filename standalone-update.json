@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha88",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha88/CarSync_Standalone_1.0.0-alpha88.apk",
-  "sha256": "8822c956f5d89560df8b591b66ef1a5b9ebb6b64f5fc9bd90a940d9301a0839d",
+  "version": "1.0.0-alpha89",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha89/CarSync_Standalone_1.0.0-alpha89.apk",
+  "sha256": "02ecb42a042a10ddfee2512ad8c4da5e88efd6e24664265070576188ee948fe0",
   "size": 13733111,
-  "notes": "修正 YouTube visitorData 解析請求：保留 NewPipe 指定的 JSON Content-Type，不再以 application/octet-stream 覆蓋；保留解析器指定的單一 User-Agent，避免混入重複瀏覽器識別。visitor_id 回應成功卻缺少 visitorData 且曾附加瀏覽器工作階段時，只對該初始化請求移除額外登入資料重試一次，保留原解析器標頭與使用者登入，不影響其他影片請求。新增 visitor 初始化的 HTTP 狀態、內容類型及是否取得資料等診斷，不記錄 Cookie、權杖或完整回應。新增本機 HTTP 伺服器實際請求測試、原始本文及標頭保留、有限次備援測試。優先更新手機後重試接續播放。"
+  "notes": "針對 visitor_id HTTP 400 修正登入資料作用範圍：原生 Android／iOS／visionOS 客戶端及訪客初始化保留解析器原始標頭，不額外混入網頁 Cookie、SAPISIDHASH 或網頁登入標頭；網頁客戶端播放與網頁請求仍可使用 App 內登入，保留使用者工作階段。新增客戶端名稱與標準 API 錯誤狀態診斷，不記錄 Cookie、visitorData 或完整回應。新增登入範圍、網頁登入保留、診斷隱私測試與公開匿名訪客初始化線上檢查。優先更新手機後再按重試載入／接續播放。"
 }
