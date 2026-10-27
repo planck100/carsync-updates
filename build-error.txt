@@ -35,39 +35,29 @@ Recommendation: remove package="app.carsync.cast" from the source AndroidManifes
 > Task :app:expandReleaseL8ArtProfileWildcards
 
 > Task :app:compileReleaseJavaWithJavac
+/home/runner/work/carsync-build/carsync-build/standalone/src/app/carsync/cast/YoutubeTranscoder.java:360: error: cannot find symbol
+ void trimTracking(Set<String> values,int maximum){Iterator<String> it=values.iterator();while(values.size()>maximum&&it.hasNext()){String url=it.next();if(!queue.contains(url))it.remove();}}
+                                                   ^
+  symbol:   class Iterator
+  location: class YoutubeTranscoder
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
+1 error
 
-> Task :app:bundleReleaseClassesToRuntimeJar
-> Task :app:bundleReleaseClassesToCompileJar
-
-> Task :app:compileReleaseUnitTestJavaWithJavac FAILED
-/home/runner/work/carsync-build/carsync-build/carsync-app/app/src/test/java/app/carsync/cast/YoutubeVisitorSmokeTest.java:3: error: package com.grack.nanojson does not exist
-import com.grack.nanojson.JsonWriter;
-                         ^
-/home/runner/work/carsync-build/carsync-build/carsync-app/app/src/test/java/app/carsync/cast/YoutubeVisitorSmokeTest.java:17: error: cannot access JsonBuilder
-  byte[] body=JsonWriter.string(YoutubeParsingHelper.prepareJsonBuilder(Localization.DEFAULT,ContentCountry.DEFAULT,InnertubeClientRequestInfo.ofAndroidClient(),null).done()).getBytes(StandardCharsets.UTF_8);
-                                                                       ^
-  class file for com.grack.nanojson.JsonBuilder not found
-/home/runner/work/carsync-build/carsync-build/carsync-app/app/src/test/java/app/carsync/cast/YoutubeVisitorSmokeTest.java:17: error: cannot find symbol
-  byte[] body=JsonWriter.string(YoutubeParsingHelper.prepareJsonBuilder(Localization.DEFAULT,ContentCountry.DEFAULT,InnertubeClientRequestInfo.ofAndroidClient(),null).done()).getBytes(StandardCharsets.UTF_8);
-              ^
-  symbol:   variable JsonWriter
-  location: class YoutubeVisitorSmokeTest
-3 errors
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_9-1793097054649.json
+> Task :app:compileReleaseJavaWithJavac FAILED
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_13-1793106023216.json
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':app:compileReleaseUnitTestJavaWithJavac'.
+Execution failed for task ':app:compileReleaseJavaWithJavac'.
 > Compilation failed; see the compiler error output for details.
 
 * Try:
 > Run with --info option to get more log output.
 > Run with --scan to get full insights.
 
-BUILD FAILED in 28s
-23 actionable tasks: 23 executed
+BUILD FAILED in 17s
+20 actionable tasks: 20 executed
 
-commit=f6a5c4f23985861915a0d49a85ed30ab4a33458a
+commit=a3e3f700d71ad3ce74a40ce6d03a6e42b7f95317
