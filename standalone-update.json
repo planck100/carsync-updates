@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha83",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha83/CarSync_Standalone_1.0.0-alpha83.apk",
-  "sha256": "647343a780b1df908b49fc92bd2fcfcdc729f6659e780bf12a56e073793100f2",
-  "size": 13704439,
-  "notes": "針對連按三次下一部卡住補強：連按選目標時不再逐次釋放播放器與清理串流，停按250ms提交後集中處理；切換世代取消舊解析、預載與播放器HTTP請求，取消後不再重試，避免舊網路工作阻塞最新目標。新增解析排隊與播放器釋放耗時Log。通過阻塞socket取消後執行最新目標測試；實車卡住原因及穩定性仍需Log與實測確認。"
+  "version": "1.0.0-alpha84",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha84/CarSync_Standalone_1.0.0-alpha84.apk",
+  "sha256": "12876bfd3946afac1b5e06c199d87b0486248d38e20e49a9430bb2f6206cd72a",
+  "size": 13716727,
+  "notes": "播放清單分頁續載：接近尾端剩3部時預先讀取下一頁，不再只讀首批或停在50部；載入期間保留一個最新下一部要求，成功後切換。續載失敗保留目前播放與游標，有限次重試後可再按下一部重試，不當作清單結束。手機設定新增「原清單結束後接續推薦影片」，預設開啟，關閉後於真正尾端停止；失敗不會跳推薦，後續頁及推薦均只讀取清單資料。新增分頁、去重、>50部、等待、失敗及過期工作階段測試。優先更新手機。"
 }
