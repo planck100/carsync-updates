@@ -19,9 +19,13 @@ Recommendation: remove package="app.carsync.cast" from the source AndroidManifes
 > Task :app:packageReleaseResources
 > Task :app:parseReleaseLocalResources
 > Task :app:processReleaseManifest
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:processReleaseManifestForPackage
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
 > Task :app:extractProguardFiles
 > Task :app:mergeReleaseJniLibFolders
-> Task :app:processReleaseManifestForPackage
 > Task :app:mergeReleaseNativeLibs NO-SOURCE
 > Task :app:stripReleaseDebugSymbols NO-SOURCE
 > Task :app:extractReleaseNativeSymbolTables NO-SOURCE
@@ -31,29 +35,39 @@ Recommendation: remove package="app.carsync.cast" from the source AndroidManifes
 > Task :app:expandReleaseL8ArtProfileWildcards
 
 > Task :app:compileReleaseJavaWithJavac
-/home/runner/work/carsync-build/carsync-build/standalone/src/app/carsync/cast/MainActivity.java:71: error: cannot find symbol
- boolean hasYoutubeSession(){return YoutubeTranscoder.hasYoutubeSession();}
-                                                     ^
-  symbol:   method hasYoutubeSession()
-  location: class YoutubeTranscoder
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
-1 error
 
-> Task :app:compileReleaseJavaWithJavac FAILED
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1792715015258.json
+> Task :app:bundleReleaseClassesToRuntimeJar
+> Task :app:bundleReleaseClassesToCompileJar
+
+> Task :app:compileReleaseUnitTestJavaWithJavac FAILED
+/home/runner/work/carsync-build/carsync-build/carsync-app/app/src/test/java/app/carsync/cast/YoutubeVisitorSmokeTest.java:3: error: package com.grack.nanojson does not exist
+import com.grack.nanojson.JsonWriter;
+                         ^
+/home/runner/work/carsync-build/carsync-build/carsync-app/app/src/test/java/app/carsync/cast/YoutubeVisitorSmokeTest.java:17: error: cannot access JsonBuilder
+  byte[] body=JsonWriter.string(YoutubeParsingHelper.prepareJsonBuilder(Localization.DEFAULT,ContentCountry.DEFAULT,InnertubeClientRequestInfo.ofAndroidClient(),null).done()).getBytes(StandardCharsets.UTF_8);
+                                                                       ^
+  class file for com.grack.nanojson.JsonBuilder not found
+/home/runner/work/carsync-build/carsync-build/carsync-app/app/src/test/java/app/carsync/cast/YoutubeVisitorSmokeTest.java:17: error: cannot find symbol
+  byte[] body=JsonWriter.string(YoutubeParsingHelper.prepareJsonBuilder(Localization.DEFAULT,ContentCountry.DEFAULT,InnertubeClientRequestInfo.ofAndroidClient(),null).done()).getBytes(StandardCharsets.UTF_8);
+              ^
+  symbol:   variable JsonWriter
+  location: class YoutubeVisitorSmokeTest
+3 errors
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_9-1793097054649.json
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':app:compileReleaseJavaWithJavac'.
+Execution failed for task ':app:compileReleaseUnitTestJavaWithJavac'.
 > Compilation failed; see the compiler error output for details.
 
 * Try:
 > Run with --info option to get more log output.
 > Run with --scan to get full insights.
 
-BUILD FAILED in 27s
-19 actionable tasks: 19 executed
+BUILD FAILED in 28s
+23 actionable tasks: 23 executed
 
-commit=0f8f161ecbc7ac0cb14a827d8e2818faf3428350
+commit=f6a5c4f23985861915a0d49a85ed30ab4a33458a
