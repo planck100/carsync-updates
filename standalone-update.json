@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha84",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha84/CarSync_Standalone_1.0.0-alpha84.apk",
-  "sha256": "12876bfd3946afac1b5e06c199d87b0486248d38e20e49a9430bb2f6206cd72a",
+  "version": "1.0.0-alpha85",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha85/CarSync_Standalone_1.0.0-alpha85.apk",
+  "sha256": "7387b16de695119aba37181d3f3914d38cb89b83aa55f2403aa9153e8fc4800e",
   "size": 13716727,
-  "notes": "播放清單分頁續載：接近尾端剩3部時預先讀取下一頁，不再只讀首批或停在50部；載入期間保留一個最新下一部要求，成功後切換。續載失敗保留目前播放與游標，有限次重試後可再按下一部重試，不當作清單結束。手機設定新增「原清單結束後接續推薦影片」，預設開啟，關閉後於真正尾端停止；失敗不會跳推薦，後續頁及推薦均只讀取清單資料。新增分頁、去重、>50部、等待、失敗及過期工作階段測試。優先更新手機。"
+  "notes": "修正更新完成後重新開啟：接收套件取代完成事件與 App 內安裝成功回報，嘗試開啟 CarSync 並沿用既有角色與配對自動重連；同版本只處理一次。Android 阻擋自動開啟時保留「開啟 CarSync」通知，實際回到 App 才清除；App 內更新前可授予通知權限，拒絕仍能更新。系統安裝確認及背景啟動限制仍適用；不自動恢復螢幕擷取授權。"
 }
