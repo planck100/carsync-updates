@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha86",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha86/CarSync_Standalone_1.0.0-alpha86.apk",
-  "sha256": "0eaa3160fa31ac5f240e84c2799aa39cbea790752df29d1a5c160d8e53020398",
-  "size": 13729015,
-  "notes": "接續播放卡片加入縮圖、進度與重新播放；直播接續改為重新連線。YouTube 保存清單順序、目前位置、手動加入項目、去重與略過紀錄、原清單分頁游標，接續時沿用清單；載入未完成不覆蓋最後可接續紀錄。手機及舊版車機上一部／下一部共用方向盤目標合併流程，載入中可繼續選擇；修正暫停後切片未恢復影像輸出。設定新增「推薦只接續一般影片（排除直播）」預設開啟，不影響主動開啟或原清單中的直播。新增清單完整還原、75部清單、分頁游標、損壞資料、推薦過濾與連續選擇測試。完整清單記錄需從本版開始保存；仍由使用者按接續播放。"
+  "version": "1.0.0-alpha87",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha87/CarSync_Standalone_1.0.0-alpha87.apk",
+  "sha256": "e944c2b79cd17128b00502f5c5b8661352b418b13915d29897fe386ee8cdced0",
+  "size": 13733111,
+  "notes": "修正初次 YouTube 解析失敗時誤走下一部／空清單續載、永久顯示「正在確認清單後續影片」的錯誤路徑；未取得清單時按下一部只保留要求並明確顯示等待初次解析，失敗會取消要求並顯示原始錯誤摘要。只在真正自動下一部且仍有候選影片時有限次略過。新增60秒解析工作階段逾時保護與40秒HTTP總逾時，過期工作會取消，不覆蓋已保存的續播紀錄；記錄解析失敗原因，改善診斷。新增初始清單未就緒及候選略過邊界回歸測試。 載入失敗後新增「重試載入目前影片」按鈕，沿用原要求的播放位置，不必關閉 App。"
 }
