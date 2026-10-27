@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha99",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha99/CarSync_Standalone_1.0.0-alpha99.apk",
-  "sha256": "12ab8228053831d3227a491ecc6ce8babee20a2df980691c201aab805edf5a8a",
+  "version": "1.0.0-alpha100",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha100/CarSync_Standalone_1.0.0-alpha100.apk",
+  "sha256": "9c7b489ee8d4afb25f2dae382fc4a17d7e008c39bac97d9a2d3d6fdae6bfabb1",
   "size": 13794551,
-  "notes": "修正設定畫面 YouTube 重新登入／登出按鈕下緣裁切：關閉帳號列的基線對齊，將垂直間距移至按鈕列本身，保留完整按鈕高度與卡片底部留白。大字體或窄螢幕改為上下排列，避免文字及邊框擠壓。維持登入、登出與播放偏好設定行為。"
+  "notes": "修正 YouTube 多語音軌只依格式、碼率挑選而可能選到英文配音：優先來源標示的原始音軌，再依語言、AAC相容性及碼率選擇；未標示原音時保留明確的語言與類型資訊。DASH播放、HTTP備援與下一部預載共用選軌規則，原音缺少DASH索引時改用相同音軌的HTTP來源，避免為維持DASH而改選其他語言。播放詳情新增YouTube音軌描述，Log記錄目前播放及預載所選音軌的語言、類型、ID與itag。新增原音優先於高碼率配音、語言與格式順序、未知類型及原始英文影片等回歸測試。"
 }
