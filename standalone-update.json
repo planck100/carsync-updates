@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha89",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha89/CarSync_Standalone_1.0.0-alpha89.apk",
-  "sha256": "02ecb42a042a10ddfee2512ad8c4da5e88efd6e24664265070576188ee948fe0",
-  "size": 13733111,
-  "notes": "針對 visitor_id HTTP 400 修正登入資料作用範圍：原生 Android／iOS／visionOS 客戶端及訪客初始化保留解析器原始標頭，不額外混入網頁 Cookie、SAPISIDHASH 或網頁登入標頭；網頁客戶端播放與網頁請求仍可使用 App 內登入，保留使用者工作階段。新增客戶端名稱與標準 API 錯誤狀態診斷，不記錄 Cookie、visitorData 或完整回應。新增登入範圍、網頁登入保留、診斷隱私測試與公開匿名訪客初始化線上檢查。優先更新手機後再按重試載入／接續播放。"
+  "version": "1.0.0-alpha90",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha90/CarSync_Standalone_1.0.0-alpha90.apk",
+  "sha256": "504863c98230d93447256fd8f6e769174f1978b7540e2e563256ad869a29bf86",
+  "size": 13741303,
+  "notes": "修正非播放清單影片的相關推薦接續：已快取的推薦若都已加入或不符合設定，主動重新取得目前影片的推薦資料，不再只重用已耗盡的快取。空結果不永久封鎖同一影片的下一部，10秒後可再次按鍵重試；讀取失敗維持目前播放並保留重試。繼續遵守排除直播設定、已播放／手動刪除去重；新增 RELATED 收到、過濾、已加入及實際新增數量診斷。新增快取耗盡、重新讀取、直播過濾、空結果後重試與錯誤傳遞測試。 若重新讀取後仍無可接續項目，搜尋同作者影片作備援（最多兩頁，仍過濾直播及已加入影片），介面會標示來源。修正貼連結視窗誤帶入含 YouTube 字樣的診斷文字，只自動填入有效影片／清單連結。個人化首頁瀏覽尚未加入。"
 }
