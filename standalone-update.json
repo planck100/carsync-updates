@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha90",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha90/CarSync_Standalone_1.0.0-alpha90.apk",
-  "sha256": "504863c98230d93447256fd8f6e769174f1978b7540e2e563256ad869a29bf86",
-  "size": 13741303,
-  "notes": "修正非播放清單影片的相關推薦接續：已快取的推薦若都已加入或不符合設定，主動重新取得目前影片的推薦資料，不再只重用已耗盡的快取。空結果不永久封鎖同一影片的下一部，10秒後可再次按鍵重試；讀取失敗維持目前播放並保留重試。繼續遵守排除直播設定、已播放／手動刪除去重；新增 RELATED 收到、過濾、已加入及實際新增數量診斷。新增快取耗盡、重新讀取、直播過濾、空結果後重試與錯誤傳遞測試。 若重新讀取後仍無可接續項目，搜尋同作者影片作備援（最多兩頁，仍過濾直播及已加入影片），介面會標示來源。修正貼連結視窗誤帶入含 YouTube 字樣的診斷文字，只自動填入有效影片／清單連結。個人化首頁瀏覽尚未加入。"
+  "version": "1.0.0-alpha91",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha91/CarSync_Standalone_1.0.0-alpha91.apk",
+  "sha256": "466e49be69172c5ec651902c084fec9a01e139efb814031c649593ff1530fcf3",
+  "size": 13757687,
+  "notes": "新增 YouTube 推薦首頁：沿用 CarSync 內既有登入 Cookie，在 App 中瀏覽 YouTube 原首頁與搜尋結果。點影片可立即交由手機轉碼播放，已有 YouTube 播放清單時可加入待播；整份播放清單可直接開始播放。播放中新增「推薦首頁」捷徑，待播清單的加入入口可從首頁選片，貼連結入口保留。處理一般點擊及頁內網址變更，WebView 僅供選片並阻擋影片串流，避免和 CarSync 播放同時出聲；關閉頁面清除 WebView 與監看工作但保留登入。新增影片／清單／Shorts／直播連結及安全導向測試。首頁個人化內容取決於 YouTube 網頁與目前登入工作階段，尚待手機 WebView 實測。"
 }
