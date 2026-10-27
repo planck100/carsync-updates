@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha87",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha87/CarSync_Standalone_1.0.0-alpha87.apk",
-  "sha256": "e944c2b79cd17128b00502f5c5b8661352b418b13915d29897fe386ee8cdced0",
+  "version": "1.0.0-alpha88",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha88/CarSync_Standalone_1.0.0-alpha88.apk",
+  "sha256": "8822c956f5d89560df8b591b66ef1a5b9ebb6b64f5fc9bd90a940d9301a0839d",
   "size": 13733111,
-  "notes": "修正初次 YouTube 解析失敗時誤走下一部／空清單續載、永久顯示「正在確認清單後續影片」的錯誤路徑；未取得清單時按下一部只保留要求並明確顯示等待初次解析，失敗會取消要求並顯示原始錯誤摘要。只在真正自動下一部且仍有候選影片時有限次略過。新增60秒解析工作階段逾時保護與40秒HTTP總逾時，過期工作會取消，不覆蓋已保存的續播紀錄；記錄解析失敗原因，改善診斷。新增初始清單未就緒及候選略過邊界回歸測試。 載入失敗後新增「重試載入目前影片」按鈕，沿用原要求的播放位置，不必關閉 App。"
+  "notes": "修正 YouTube visitorData 解析請求：保留 NewPipe 指定的 JSON Content-Type，不再以 application/octet-stream 覆蓋；保留解析器指定的單一 User-Agent，避免混入重複瀏覽器識別。visitor_id 回應成功卻缺少 visitorData 且曾附加瀏覽器工作階段時，只對該初始化請求移除額外登入資料重試一次，保留原解析器標頭與使用者登入，不影響其他影片請求。新增 visitor 初始化的 HTTP 狀態、內容類型及是否取得資料等診斷，不記錄 Cookie、權杖或完整回應。新增本機 HTTP 伺服器實際請求測試、原始本文及標頭保留、有限次備援測試。優先更新手機後重試接續播放。"
 }
