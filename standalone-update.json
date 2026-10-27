@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha91",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha91/CarSync_Standalone_1.0.0-alpha91.apk",
-  "sha256": "466e49be69172c5ec651902c084fec9a01e139efb814031c649593ff1530fcf3",
+  "version": "1.0.0-alpha92",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha92/CarSync_Standalone_1.0.0-alpha92.apk",
+  "sha256": "0e9db93b99fbc7d596cb261bc856b50ee4f2c4579cb65d1831928175d02c2358",
   "size": 13757687,
-  "notes": "新增 YouTube 推薦首頁：沿用 CarSync 內既有登入 Cookie，在 App 中瀏覽 YouTube 原首頁與搜尋結果。點影片可立即交由手機轉碼播放，已有 YouTube 播放清單時可加入待播；整份播放清單可直接開始播放。播放中新增「推薦首頁」捷徑，待播清單的加入入口可從首頁選片，貼連結入口保留。處理一般點擊及頁內網址變更，WebView 僅供選片並阻擋影片串流，避免和 CarSync 播放同時出聲；關閉頁面清除 WebView 與監看工作但保留登入。新增影片／清單／Shorts／直播連結及安全導向測試。首頁個人化內容取決於 YouTube 網頁與目前登入工作階段，尚待手機 WebView 實測。"
+  "notes": "修正已預載影片切換後缺少縮圖：預載資料保留縮圖網址並於播放時套用，取得預載資訊後同步更新清單標題與縮圖。播放清單開啟期間按影片來源更新縮圖／標題，關閉清單會移除更新工作。YouTube 清單縮圖未取得或下載失敗時保留固定位置及預設圖示，不再隱藏整格；忽略空白縮圖來源並處理相對協定網址。優先更新手機。"
 }
