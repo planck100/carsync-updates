@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha92",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha92/CarSync_Standalone_1.0.0-alpha92.apk",
-  "sha256": "0e9db93b99fbc7d596cb261bc856b50ee4f2c4579cb65d1831928175d02c2358",
-  "size": 13757687,
-  "notes": "修正已預載影片切換後缺少縮圖：預載資料保留縮圖網址並於播放時套用，取得預載資訊後同步更新清單標題與縮圖。播放清單開啟期間按影片來源更新縮圖／標題，關閉清單會移除更新工作。YouTube 清單縮圖未取得或下載失敗時保留固定位置及預設圖示，不再隱藏整格；忽略空白縮圖來源並處理相對協定網址。優先更新手機。"
+  "version": "1.0.0-alpha93",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha93/CarSync_Standalone_1.0.0-alpha93.apk",
+  "sha256": "ba1238cf0101eea8a570db066a755002cba0158d6ff62f39fc19ac4777551671",
+  "size": 13765879,
+  "notes": "修正手動加入待播影片未讀取標題與縮圖：加入後立即以小型 oEmbed 中繼資料請求背景取得資訊，不必等輪到播放或媒體預載。依加入順序讀取、合併同一影片重複要求；移除或更換工作階段會取消並丟棄過期結果。開啟清單及恢復保存清單時補讀既有手動項目，清單畫面自動更新。項目選單新增「重新讀取標題與縮圖」，失敗顯示明確狀態並可重試。新增多部加入、重複合併、移除後舊回應、重加、失敗重試及圖片網址測試。"
 }
