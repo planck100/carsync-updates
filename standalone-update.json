@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha100",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha100/CarSync_Standalone_1.0.0-alpha100.apk",
-  "sha256": "9c7b489ee8d4afb25f2dae382fc4a17d7e008c39bac97d9a2d3d6fdae6bfabb1",
-  "size": 13794551,
-  "notes": "修正 YouTube 多語音軌只依格式、碼率挑選而可能選到英文配音：優先來源標示的原始音軌，再依語言、AAC相容性及碼率選擇；未標示原音時保留明確的語言與類型資訊。DASH播放、HTTP備援與下一部預載共用選軌規則，原音缺少DASH索引時改用相同音軌的HTTP來源，避免為維持DASH而改選其他語言。播放詳情新增YouTube音軌描述，Log記錄目前播放及預載所選音軌的語言、類型、ID與itag。新增原音優先於高碼率配音、語言與格式順序、未知類型及原始英文影片等回歸測試。"
+  "version": "1.0.0-alpha101",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha101/CarSync_Standalone_1.0.0-alpha101.apk",
+  "sha256": "d553cc0adf18b5681e60f28e1666747d32ea04f92734801396c37744fffac194",
+  "size": 13798647,
+  "notes": "補強第一部間歇播放失敗與重試：正常仍走DASH，播放錯誤或手動重試改用保留相同選軌規則的HTTP相容來源，重試時重新讀取媒體資料並暫停預載讓目前播放優先。修正短暫READY便清空失敗次數，改為每部影片維持最多3次自動恢復，畫面與播放進度穩定30秒後才恢復重試預算。新增READY但20秒無首幀或播放位置不前進的偵測；暫停與緩衝不誤觸發。Log新增一般影片FIRST_FRAME及恢復方式與完整錯誤，方便追查真正失敗原因。新增同部重試上限、HTTP備援、新片重設、穩定後恢復預算與進度停滯回歸測試。"
 }
