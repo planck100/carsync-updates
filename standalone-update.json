@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha102",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha102/CarSync_Standalone_1.0.0-alpha102.apk",
-  "sha256": "91d0b782a8a32e45bcce91ebd9292f9440547fef907b700d639892b3165ba7f2",
+  "version": "1.0.0-alpha103",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha103/CarSync_Standalone_1.0.0-alpha103.apk",
+  "sha256": "9d581634587b3ce6c2af9eb5b2303b0487008ca33c079bc2caf2d781eb32a4f8",
   "size": 13802743,
-  "notes": "修正重連影像初始化競態：先排入解碼設定再登錄接收設備，手機與車機皆等待關鍵影格後才接續一般影格。佇列溢位改為丟棄整段失去參考的影格並重送設定、要求新關鍵影格，避免為塞入關鍵影格而任意移除參考影格。車機先排空解碼輸出再取輸入，輸入逾時或解碼例外優先重新同步影像，重複例外才重連。新增實際首幀顯示、解碼例外與前次斷線原因回傳手機RX-REPORT；回呼與回報限定目前連線與解碼器。新連線先顯示觀察中。加入實際TCP初始化順序、GOP遺失恢復、設定切換、回報協定與控制EOF不關閉影像的回歸測試。手機與車機均需更新以啟用完整修正。"
+  "notes": "提高車機720p串流的初始與最高編碼碼率，由2.4 Mbps改為4 Mbps，維持1280×720與最高30 FPS，沿用1080p來源解析及平板1080p獨立串流。保留壅塞或過熱時降低碼率、穩定後逐步回升至4 Mbps的保護。所有編碼啟動入口統一重設碼率與適應計數，避免切換播放來源後沿用舊顯示數值。已使用720p的接收端首次更新改為等比例完整置中，選擇車機720p也採完整置中；之後仍可自行調整比例。串流選項標示720p高畫質4 Mbps。保留alpha102重連與關鍵影格修正，手機和車機請一併更新；原本選1080p的車機請手動切換720p高畫質以測試。"
 }
