@@ -1,8 +1,8 @@
 {
   "package": "app.carsync.cast",
-  "version": "1.0.0-alpha101",
-  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha101/CarSync_Standalone_1.0.0-alpha101.apk",
-  "sha256": "d553cc0adf18b5681e60f28e1666747d32ea04f92734801396c37744fffac194",
-  "size": 13798647,
-  "notes": "補強第一部間歇播放失敗與重試：正常仍走DASH，播放錯誤或手動重試改用保留相同選軌規則的HTTP相容來源，重試時重新讀取媒體資料並暫停預載讓目前播放優先。修正短暫READY便清空失敗次數，改為每部影片維持最多3次自動恢復，畫面與播放進度穩定30秒後才恢復重試預算。新增READY但20秒無首幀或播放位置不前進的偵測；暫停與緩衝不誤觸發。Log新增一般影片FIRST_FRAME及恢復方式與完整錯誤，方便追查真正失敗原因。新增同部重試上限、HTTP備援、新片重設、穩定後恢復預算與進度停滯回歸測試。"
+  "version": "1.0.0-alpha102",
+  "apkUrl": "https://github.com/planck100/carsync-updates/releases/download/standalone-v1.0.0-alpha102/CarSync_Standalone_1.0.0-alpha102.apk",
+  "sha256": "91d0b782a8a32e45bcce91ebd9292f9440547fef907b700d639892b3165ba7f2",
+  "size": 13802743,
+  "notes": "修正重連影像初始化競態：先排入解碼設定再登錄接收設備，手機與車機皆等待關鍵影格後才接續一般影格。佇列溢位改為丟棄整段失去參考的影格並重送設定、要求新關鍵影格，避免為塞入關鍵影格而任意移除參考影格。車機先排空解碼輸出再取輸入，輸入逾時或解碼例外優先重新同步影像，重複例外才重連。新增實際首幀顯示、解碼例外與前次斷線原因回傳手機RX-REPORT；回呼與回報限定目前連線與解碼器。新連線先顯示觀察中。加入實際TCP初始化順序、GOP遺失恢復、設定切換、回報協定與控制EOF不關閉影像的回歸測試。手機與車機均需更新以啟用完整修正。"
 }
