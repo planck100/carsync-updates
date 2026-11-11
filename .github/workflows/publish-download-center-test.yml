@@ -1,0 +1,48 @@
+name: Publish Download Center test APK
+on:
+  push:
+    branches: ['codex/download-center-v1']
+    paths: ['.github/workflows/publish-download-center-test.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: publish-download-center-test
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'planck100/carsync-updates' && github.ref == 'refs/heads/codex/download-center-v1'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Recover exact previously tested artifact
+        run: |
+          set -euo pipefail
+          gh api repos/planck100/carsync-updates/actions/artifacts/13820757577/zip > artifact.zip
+          printf '%s\n' '2539b86b4e0eb41ec420b147a65350ad3e183602b5d925182c21024610263a74  artifact.zip' | sha256sum -c -
+          mkdir -p download-center/dist
+          unzip -q artifact.zip -d download-center/dist
+          sha256sum -c download-center/dist/SHA256SUMS.txt
+          test -s download-center/dist/CarDownloadCenter_0.1.0_test.apk
+      - name: Publish APK without rebuilding or changing its signing key
+        run: |
+          set -euo pipefail
+          tag=download-center-v0.1.0-test
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release download "$tag" --pattern CarDownloadCenter_0.1.0_test.apk --dir existing
+            cmp existing/CarDownloadCenter_0.1.0_test.apk download-center/dist/CarDownloadCenter_0.1.0_test.apk
+          else
+            gh release create "$tag" download-center/dist/CarDownloadCenter_0.1.0_test.apk download-center/dist/SHA256SUMS.txt download-center/dist/signature.txt --target 85a98e567821e535473d00c88d815be7dd820029 --title '車機下載中心 0.1.0 測試版' --prerelease --latest=false --notes '公開 APK 下載，不需登入或解壓縮。與先前提供的 0.1.0 測試 APK 為相同檔案，未重新編譯或變更簽章。支援線上清單、CarSync 下載與手動確認安裝。神盾與啟動器下載來源尚待接上。尚未實機驗證。'
+          fi
+      - name: Verify anonymous download matches published APK
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 5 --retry-delay 3 --output public.apk https://github.com/planck100/carsync-updates/releases/download/download-center-v0.1.0-test/CarDownloadCenter_0.1.0_test.apk
+          cmp public.apk download-center/dist/CarDownloadCenter_0.1.0_test.apk
