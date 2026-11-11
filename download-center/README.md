@@ -42,3 +42,5 @@ Java 17、Gradle 8.11.1、Android SDK 35：
 `cd download-center && gradle :app:assembleDebug :app:lintDebug`
 
 工作流程只產生測試成品，不自動發布 release 或改動既有 CarSync APK。
+
+下載中心作為安裝管理工具，需要辨識遠端清單中未預先列舉的 App，因此宣告 QUERY_ALL_PACKAGES，僅對此 lint 項目附具體理由，不停用其餘檢查。已安裝套件資料只在本機比對，不上傳。
