@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "title": "車機下載中心",
+  "apps": [
+    {
+      "id": "shield-bridge",
+      "name": "神盾",
+      "status": "pending",
+      "packageName": null,
+      "source": {
+        "type": "apk",
+        "url": null
+      },
+      "unavailableReason": "待確認修改版套件名稱及固定 APK 下載網址"
+    },
+    {
+      "id": "car-launcher",
+      "name": "車機啟動器",
+      "status": "pending",
+      "packageName": null,
+      "source": {
+        "type": "apk",
+        "url": null
+      },
+      "unavailableReason": "待確認修改版套件名稱及固定 APK 下載網址"
+    },
+    {
+      "id": "carsync",
+      "name": "CarSync",
+      "status": "active",
+      "packageName": "app.carsync.cast",
+      "source": {
+        "type": "json",
+        "url": "https://raw.githubusercontent.com/planck100/carsync-updates/main/standalone-update.json",
+        "fields": {
+          "packageName": "package",
+          "versionName": "version",
+          "apkUrl": "apkUrl",
+          "sha256": "sha256",
+          "sizeBytes": "size",
+          "releaseNotes": "notes"
+        }
+      },
+      "notes": "沿用既有發布來源；不要將舊版 app.carsync.mobile.display 當成此套件的更新。"
+    }
+  ]
+}
