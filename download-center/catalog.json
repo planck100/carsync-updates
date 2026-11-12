@@ -15,7 +15,7 @@
       "versionCode": 242,
       "sha256": "5011f5c9d0470f995bb28d2c1c0fd5ad88f5d81ab7ff45e401f59d28935aeeda",
       "sizeBytes": 55243234,
-      "releaseNotes": "v4：修正提醒圖示誤判定位過期，新增 alertState 診斷；使用者已回報圖示、速限、車速與語音正常。可搭配啟動器 v4 顯示優化版。"
+      "releaseNotes": "v4：修正提醒圖示誤判定位過期，新增 alertState 診斷；使用者已回報圖示、速限、車速與語音正常。可搭配啟動器 v5 全格輪播版。"
     },
     {
       "id": "car-launcher",
@@ -24,13 +24,13 @@
       "packageName": "com.autolauncher.motorcar",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/CarLauncher_ShieldBridge_v4.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/CarLauncher_ShieldBridge_v5.apk"
       },
-      "versionName": "3.4.1.24-bridge4",
-      "versionCode": 34125,
-      "sha256": "a4e7f56168fb9d8dc7c58db2e93d2bdca84b783581d617ca02e91aafa6cc6b79",
-      "sizeBytes": 24475631,
-      "releaseNotes": "v4 顯示優化：車速加粗放大、限速牌放大、分類標記縮小並集中排列；超速橘紅色、不閃爍；無提醒時收起圖示。搭配神盾 v4，保留原安裝資料。"
+      "versionName": "3.4.1.24-bridge5",
+      "versionCode": 34126,
+      "sha256": "6a9326664fa4203099d42cd2db46c75f059c94601c8f7232daae340942584c6f",
+      "sizeBytes": 24479727,
+      "releaseNotes": "v5：全格輪播車速→類型→速限，缺少速限時省略；無提醒固定車速。一般點超速整格橘紅底，字體／圖示維持原色。區間平均尚未導出，本版不判區間平均超速。搭配神盾 v4；待車機實測。"
     },
     {
       "id": "carsync",
