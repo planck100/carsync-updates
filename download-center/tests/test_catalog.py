@@ -33,7 +33,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(self.catalog, bundled)
     def test_direct_download_metadata(self):
         direct = [a for a in self.catalog["apps"] if a["source"]["type"] == "apk"]
-        self.assertEqual(len(direct), 2)
+        self.assertEqual({a["id"] for a in direct}, {"shield-bridge", "car-launcher", "download-center"})
         for a in direct:
             self.assertEqual(a["status"], "active")
             self.assertRegex(a["sha256"], r"^[a-f0-9]{64}$")

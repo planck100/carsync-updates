@@ -50,6 +50,21 @@
         }
       },
       "notes": "沿用既有發布來源；不要將舊版 app.carsync.mobile.display 當成此套件的更新。"
+    },
+    {
+      "id": "download-center",
+      "name": "下載中心",
+      "status": "active",
+      "packageName": "app.car.downloadcenter.test",
+      "source": {
+        "type": "apk",
+        "url": "https://github.com/planck100/carsync-updates/releases/download/download-center-v0.2.0-test/CarDownloadCenter_0.3.0.apk"
+      },
+      "versionName": "0.3.0",
+      "versionCode": 3,
+      "sha256": "811c5284734db36c4e83c4068710a4a551407ca0ad294b9b2eea073bcc06cc28",
+      "sizeBytes": 37567,
+      "releaseNotes": "0.3.0：每個 App 只保留最新已驗證安裝檔，自動清理舊 APK。從此版起使用固定簽章，後續可在本 App 下載並覆蓋更新，再由 Android 確認安裝。0.2.0 因簽章不同，首次需先下載新版 APK、只移除舊下載中心再安裝。"
     }
   ]
 }
