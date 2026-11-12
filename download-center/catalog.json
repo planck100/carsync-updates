@@ -15,7 +15,7 @@
       "versionCode": 242,
       "sha256": "5011f5c9d0470f995bb28d2c1c0fd5ad88f5d81ab7ff45e401f59d28935aeeda",
       "sizeBytes": 55243234,
-      "releaseNotes": "v4 測試版：修正提醒圖示誤判定位過期，新增 alertState 診斷。只更新神盾，啟動器維持 v3；語音消失尚未確認修復，待車機實測。"
+      "releaseNotes": "v4：修正提醒圖示誤判定位過期，新增 alertState 診斷；使用者已回報圖示、速限、車速與語音正常。可搭配啟動器 v4 顯示優化版。"
     },
     {
       "id": "car-launcher",
@@ -24,13 +24,13 @@
       "packageName": "com.autolauncher.motorcar",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v3/CarLauncher_ShieldBridge_v3.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/CarLauncher_ShieldBridge_v4.apk"
       },
-      "versionName": "3.4.1.24-bridge3",
-      "versionCode": 34124,
-      "sha256": "505304f4e0bff2ca404c684ccab5a214887be798599385cb1ea982deb39786c3",
+      "versionName": "3.4.1.24-bridge4",
+      "versionCode": 34125,
+      "sha256": "a4e7f56168fb9d8dc7c58db2e93d2bdca84b783581d617ca02e91aafa6cc6b79",
       "sizeBytes": 24475631,
-      "releaseNotes": "v3 桌面提醒整合版；保留原安裝資料。"
+      "releaseNotes": "v4 顯示優化：車速加粗放大、限速牌放大、分類標記縮小並集中排列；超速橘紅色、不閃爍；無提醒時收起圖示。搭配神盾 v4，保留原安裝資料。"
     },
     {
       "id": "carsync",
