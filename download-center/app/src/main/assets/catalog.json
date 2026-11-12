@@ -9,13 +9,13 @@
       "packageName": "tw.com.ainvest.outpack",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v3/Shield_DesktopBridge_v3.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v4_test.apk"
       },
-      "versionName": "3.8.8-bridge3",
-      "versionCode": 241,
-      "sha256": "e33556d6510d9f37a1890b9f96343c5bedcdfcda4a0e5ae27c33fa243b6d2a65",
-      "sizeBytes": 55239138,
-      "releaseNotes": "v3 桌面提醒整合版；保留原安裝資料。"
+      "versionName": "3.8.8-bridge4",
+      "versionCode": 242,
+      "sha256": "5011f5c9d0470f995bb28d2c1c0fd5ad88f5d81ab7ff45e401f59d28935aeeda",
+      "sizeBytes": 55243234,
+      "releaseNotes": "v4：修正提醒圖示誤判定位過期，新增 alertState 診斷；使用者已回報圖示、速限、車速與語音正常。可搭配啟動器 v6 加快輪播與持續超速閃爍版。"
     },
     {
       "id": "car-launcher",
@@ -24,13 +24,13 @@
       "packageName": "com.autolauncher.motorcar",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v3/CarLauncher_ShieldBridge_v3.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/CarLauncher_ShieldBridge_v6.apk"
       },
-      "versionName": "3.4.1.24-bridge3",
-      "versionCode": 34124,
-      "sha256": "505304f4e0bff2ca404c684ccab5a214887be798599385cb1ea982deb39786c3",
-      "sizeBytes": 24475631,
-      "releaseNotes": "v3 桌面提醒整合版；保留原安裝資料。"
+      "versionName": "3.4.1.24-bridge6",
+      "versionCode": 34127,
+      "sha256": "92408e5805954b4c4d0679cbb2f98560ddc59cc109c7abd127e8b273be1b0b02",
+      "sizeBytes": 24479727,
+      "releaseNotes": "v6：車速1.5秒→類型1秒→速限1.5秒，一圈4秒。一般點超速整格橘紅底每秒亮暗循環，持續到車速正常或神盾解除提醒；文字圖示不改色、輪播照常。區間平均未導出。搭配神盾v4；待車機實測。"
     },
     {
       "id": "carsync",

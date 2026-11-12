@@ -52,7 +52,7 @@ public final class MainActivity extends Activity {
         TextView title = text("車機下載中心", 27);
         title.setTypeface(null, Typeface.BOLD);
         root.addView(title);
-        TextView hint = text("選擇 App 下載，完成後由你確認安裝", 15);
+        TextView hint = text("每個 App 保留最新安裝檔，完成後由你確認安裝", 15);
         root.addView(hint);
         refresh = new Button(this);
         refresh.setText("檢查更新");
@@ -106,7 +106,7 @@ public final class MainActivity extends Activity {
             HttpURLConnection c = (HttpURLConnection) url.openConnection();
             c.setConnectTimeout(15000); c.setReadTimeout(25000);
             c.setInstanceFollowRedirects(false);
-            c.setRequestProperty("User-Agent", "CarDownloadCenter/0.2");
+            c.setRequestProperty("User-Agent", "CarDownloadCenter/0.3");
             c.setRequestProperty("Cache-Control", "no-cache");
             int code = c.getResponseCode();
             if (code >= 300 && code < 400) {
@@ -136,6 +136,7 @@ public final class MainActivity extends Activity {
         worker.execute(() -> {
             ArrayList<Entry> result = new ArrayList<>();
             String message;
+            String cleanup = cleanupCache();
             int unavailable = 0;
             try {
                 JSONObject catalog;
@@ -202,7 +203,7 @@ public final class MainActivity extends Activity {
                 }
                 message = offline ? "目前顯示上次清單；網路恢復後請重新整理" : "清單已更新，共 " + result.size() + " 個 App" + (unavailable > 0 ? "；其中 " + unavailable + " 個目前無法下載" : "");
             } catch (Exception ex) { message = "清單讀取失敗：" + brief(ex) + "；請檢查網路後重試"; }
-            final String finalMessage = message;
+            final String finalMessage = message + cleanup;
             ui(() -> { entries.clear(); entries.addAll(result); setBusy(false); render(); status.setText(finalMessage); });
         });
     }
@@ -327,16 +328,37 @@ public final class MainActivity extends Activity {
                 } finally { c.disconnect(); }
                 verify(e, partial);
                 File target = new File(dir,e.hash + ".apk");
-                if (target.exists() && !target.delete()) throw new IOException("無法替換舊檔案");
-                if (!partial.renameTo(target)) throw new IOException("無法儲存 APK");
+                if (target.exists()) { verify(e,target); }
+                else if (!partial.renameTo(target)) throw new IOException("無法儲存 APK");
+                String cleanup = cleanupCache();
+                if (!target.isFile()) throw new IOException("本機已保留較新安裝檔，請重新檢查更新" + cleanup);
                 pending = e; pendingFile = target;
                 prefs.edit().putString("pendingId",e.id).putString("pendingHash",e.hash).apply();
-                ui(() -> { setBusy(false); render(); status.setText(e.name + " 下載與檔案驗證完成，請確認安裝"); installPending(); });
+                ui(() -> { setBusy(false); render(); status.setText(e.name + " 下載與檔案驗證完成，請確認安裝" + cleanup); installPending(); });
             } catch (Exception ex) {
                 String error = brief(ex);
                 ui(() -> { setBusy(false); render(); status.setText("下載失敗：" + error); });
             } finally { if (partial != null) partial.delete(); }
         });
+    }
+    private String cleanupCache() {
+        try {
+            ApkCache.Result result = ApkCache.prune(new File(getFilesDir(),"verified"), file -> {
+                MessageDigest digest = MessageDigest.getInstance("SHA-256");
+                try (InputStream in = new FileInputStream(file)) {
+                    byte[] buffer = new byte[65536]; int count;
+                    while ((count = in.read(buffer)) != -1) {
+                        if (Thread.currentThread().isInterrupted()) throw new IOException("已取消清理");
+                        digest.update(buffer,0,count);
+                    }
+                }
+                if (!file.getName().equals(hex(digest.digest()) + ".apk")) return null;
+                PackageInfo apk = getPackageManager().getPackageArchiveInfo(file.getAbsolutePath(),0);
+                return apk == null ? null : new ApkCache.Info(apk.packageName,code(apk));
+            },System.currentTimeMillis());
+            return (result.deleted > 0 ? "；已清理 " + result.deleted + " 個舊／損壞／暫存檔" : "") +
+                (result.failed > 0 ? "；部分舊檔無法刪除，下次開啟重試" : "");
+        } catch (Exception ex) { return "；自動清理未完成，下次開啟重試"; }
     }
     private static String hex(byte[] data) {
         StringBuilder s = new StringBuilder();
