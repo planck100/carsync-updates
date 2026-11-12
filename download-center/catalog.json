@@ -9,13 +9,13 @@
       "packageName": "tw.com.ainvest.outpack",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v3/Shield_DesktopBridge_v3.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v4_test.apk"
       },
-      "versionName": "3.8.8-bridge3",
-      "versionCode": 241,
-      "sha256": "e33556d6510d9f37a1890b9f96343c5bedcdfcda4a0e5ae27c33fa243b6d2a65",
-      "sizeBytes": 55239138,
-      "releaseNotes": "v3 桌面提醒整合版；保留原安裝資料。"
+      "versionName": "3.8.8-bridge4",
+      "versionCode": 242,
+      "sha256": "5011f5c9d0470f995bb28d2c1c0fd5ad88f5d81ab7ff45e401f59d28935aeeda",
+      "sizeBytes": 55243234,
+      "releaseNotes": "v4 測試版：修正提醒圖示誤判定位過期，新增 alertState 診斷。只更新神盾，啟動器維持 v3；語音消失尚未確認修復，待車機實測。"
     },
     {
       "id": "car-launcher",
