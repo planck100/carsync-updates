@@ -9,13 +9,13 @@
       "packageName": "tw.com.ainvest.outpack",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v7.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v8.apk"
       },
-      "versionName": "3.8.8-bridge7",
-      "versionCode": 245,
-      "sha256": "1d5138ab3e7b14173c1d20176fb57fcfdbcaef4a935d68bd7135f3ee7142daea",
-      "sizeBytes": 55263714,
-      "releaseNotes": "v7：修正經常出沒的內建接近語音預設空值，並自動修復舊設定中空白或失效的內建語音名稱。保留有效自選語音與提醒／車速條件，沿用v6紅光防跳動、卡片避讓及GPS品質修正。可直接覆蓋，啟動器維持v6。接近語音仍待車機實測。"
+      "versionName": "3.8.8-bridge8-mp3",
+      "versionCode": 247,
+      "sha256": "810aee0892ecb44823f0119b7d5dfc19586d525d5b29282cd407a045187c77c7",
+      "sizeBytes": 55333425,
+      "releaseNotes": "v8 MP3：超速大於5km/h持續1秒啟動紅光、回到速限以內停止；小卡文字與圖示放大，有速限用紅圈數字。接入神盾區間平均，小卡顯示並提供首頁輪播資料。成功套用取締點更新後播放內嵌MP3一次，不需TTS。保留GPS品質與經常出沒語音修復。搭配啟動器v7，待車機實測。"
     },
     {
       "id": "car-launcher",
@@ -24,13 +24,13 @@
       "packageName": "com.autolauncher.motorcar",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/CarLauncher_ShieldBridge_v6.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/CarLauncher_ShieldBridge_v7.apk"
       },
-      "versionName": "3.4.1.24-bridge6",
-      "versionCode": 34127,
-      "sha256": "92408e5805954b4c4d0679cbb2f98560ddc59cc109c7abd127e8b273be1b0b02",
+      "versionName": "3.4.1.24-bridge7",
+      "versionCode": 34128,
+      "sha256": "b42a51a3ffe79ff098e48405bb5665a6b35ed8839dde21aee851d07178740eb6",
       "sizeBytes": 24479727,
-      "releaseNotes": "v6：車速1.5秒→類型1秒→速限1.5秒，一圈4秒。一般點超速整格橘紅底每秒亮暗循環，持續到車速正常或神盾解除提醒；文字圖示不改色、輪播照常。區間平均未導出。搭配神盾v6；待車機實測。"
+      "releaseNotes": "v7：首頁原有車速→類型→速限輪播新增區間平均頁，標示平均與單位；進出及切換區間更新清除，無有效值顯示--。沿用整格超速提示與既有輪播節奏，搭配神盾v8，待車機實測。"
     },
     {
       "id": "carsync",
@@ -58,13 +58,13 @@
       "packageName": "app.car.downloadcenter.test",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/download-center-v0.2.0-test/CarDownloadCenter_0.3.0.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/download-center-v0.2.0-test/CarDownloadCenter_0.4.0.apk"
       },
-      "versionName": "0.3.0",
-      "versionCode": 3,
-      "sha256": "811c5284734db36c4e83c4068710a4a551407ca0ad294b9b2eea073bcc06cc28",
+      "versionName": "0.4.0",
+      "versionCode": 4,
+      "sha256": "aac50a4eb9f4b84735797d9050f352fa66cfb015bd94d2c87d88dc4613a5f791",
       "sizeBytes": 37567,
-      "releaseNotes": "0.3.0：每個 App 只保留最新已驗證安裝檔，自動清理舊 APK。從此版起使用固定簽章，後續可在本 App 下載並覆蓋更新，再由 Android 確認安裝。0.2.0 因簽章不同，首次需先下載新版 APK、只移除舊下載中心再安裝。"
+      "releaseNotes": "0.4.0：醒目的可更新數量摘要、有新版優先排序、金色標示與大型下載更新／安裝新版按鈕。保留APK自動清理與自身更新；與0.3.0同簽章可覆蓋。0.2.0首次仍需只移除舊下載中心再安裝。"
     }
   ]
 }
