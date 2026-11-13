@@ -9,13 +9,13 @@
       "packageName": "tw.com.ainvest.outpack",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v5.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v6.apk"
       },
-      "versionName": "3.8.8-bridge5",
-      "versionCode": 243,
-      "sha256": "9b4df1dc5f5ee0c2862a3e57bf76ec450a134e85aa71da0dda7637c1ad88574e",
-      "sizeBytes": 55255522,
-      "releaseNotes": "v5：跨 App 類型＋距取締點距離卡（GPS直線距離，可拖曳）。一般點超速大於15km/h持續1秒，四邊紅色柔光持續亮暗；降回門檻、提醒解除或資料過期即停。更新後開啟「神盾提醒設定」允許上層顯示並測試5秒。與v4同簽章，可覆蓋更新；啟動器維持v6。區間平均尚未導出，待車機實測。"
+      "versionName": "3.8.8-bridge6",
+      "versionCode": 244,
+      "sha256": "8176fcf5f23f7401dfd8e880c24efa45f9951193bd92610b9a77bb815ff0ba8d",
+      "sizeBytes": 55263714,
+      "releaseNotes": "v6：紅光超速>15km/h持續1秒啟動、<=12解除，避免門檻跳動。提醒卡可選四角、橫直向分開記位置、點按收合/展開、長按設定。GPS加入精度及車速/位置跳動檢查，不可靠時暫停紅光、首頁顯示--及GPS狀態，連續穩定新定位後恢復。與v5同簽章可覆蓋；啟動器維持v6。待車機實測。"
     },
     {
       "id": "car-launcher",
@@ -30,7 +30,7 @@
       "versionCode": 34127,
       "sha256": "92408e5805954b4c4d0679cbb2f98560ddc59cc109c7abd127e8b273be1b0b02",
       "sizeBytes": 24479727,
-      "releaseNotes": "v6：車速1.5秒→類型1秒→速限1.5秒，一圈4秒。一般點超速整格橘紅底每秒亮暗循環，持續到車速正常或神盾解除提醒；文字圖示不改色、輪播照常。區間平均未導出。搭配神盾v5；待車機實測。"
+      "releaseNotes": "v6：車速1.5秒→類型1秒→速限1.5秒，一圈4秒。一般點超速整格橘紅底每秒亮暗循環，持續到車速正常或神盾解除提醒；文字圖示不改色、輪播照常。區間平均未導出。搭配神盾v6；待車機實測。"
     },
     {
       "id": "carsync",
