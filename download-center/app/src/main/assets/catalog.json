@@ -9,13 +9,13 @@
       "packageName": "tw.com.ainvest.outpack",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v8.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v9.apk"
       },
-      "versionName": "3.8.8-bridge8-mp3",
-      "versionCode": 247,
-      "sha256": "810aee0892ecb44823f0119b7d5dfc19586d525d5b29282cd407a045187c77c7",
-      "sizeBytes": 55333425,
-      "releaseNotes": "v8 MP3：超速大於5km/h持續1秒啟動紅光、回到速限以內停止；小卡文字與圖示放大，有速限用紅圈數字。接入神盾區間平均，小卡顯示並提供首頁輪播資料。成功套用取締點更新後播放內嵌MP3一次，不需TTS。保留GPS品質與經常出沒語音修復。搭配啟動器v7，待車機實測。"
+      "versionName": "3.8.8-bridge9",
+      "versionCode": 248,
+      "sha256": "b4d42a9af03413b1477802e010e7bb939c20c23c99ee813ced5fd7b9f0c446c2",
+      "sizeBytes": 55337521,
+      "releaseNotes": "v9：啟動／喚醒後GPS無新回呼時自動重掛原生監聽並退避重試，尊重手動停止、定位權限及模擬模式。補上區間專用直線距離，切換／離開及GPS失效清除舊值，保留原生平均車速。沿用v8紅光門檻、大字卡片、GPS品質與內嵌更新完成MP3。同簽章可覆蓋；啟動器維持v7。實際車機恢復與距離待驗證。"
     },
     {
       "id": "car-launcher",
