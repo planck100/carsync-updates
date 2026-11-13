@@ -9,13 +9,13 @@
       "packageName": "tw.com.ainvest.outpack",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v6.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v7.apk"
       },
-      "versionName": "3.8.8-bridge6",
-      "versionCode": 244,
-      "sha256": "8176fcf5f23f7401dfd8e880c24efa45f9951193bd92610b9a77bb815ff0ba8d",
+      "versionName": "3.8.8-bridge7",
+      "versionCode": 245,
+      "sha256": "1d5138ab3e7b14173c1d20176fb57fcfdbcaef4a935d68bd7135f3ee7142daea",
       "sizeBytes": 55263714,
-      "releaseNotes": "v6：紅光超速>15km/h持續1秒啟動、<=12解除，避免門檻跳動。提醒卡可選四角、橫直向分開記位置、點按收合/展開、長按設定。GPS加入精度及車速/位置跳動檢查，不可靠時暫停紅光、首頁顯示--及GPS狀態，連續穩定新定位後恢復。與v5同簽章可覆蓋；啟動器維持v6。待車機實測。"
+      "releaseNotes": "v7：修正經常出沒的內建接近語音預設空值，並自動修復舊設定中空白或失效的內建語音名稱。保留有效自選語音與提醒／車速條件，沿用v6紅光防跳動、卡片避讓及GPS品質修正。可直接覆蓋，啟動器維持v6。接近語音仍待車機實測。"
     },
     {
       "id": "car-launcher",
