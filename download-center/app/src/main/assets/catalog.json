@@ -9,13 +9,13 @@
       "packageName": "tw.com.ainvest.outpack",
       "source": {
         "type": "apk",
-        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v9.apk"
+        "url": "https://github.com/planck100/carsync-updates/releases/download/shield-bridge-v4-test/Shield_DesktopBridge_v10.apk"
       },
-      "versionName": "3.8.8-bridge9",
-      "versionCode": 248,
-      "sha256": "b4d42a9af03413b1477802e010e7bb939c20c23c99ee813ced5fd7b9f0c446c2",
+      "versionName": "3.8.8-bridge10",
+      "versionCode": 249,
+      "sha256": "bb1ca4a9b847ce0b4207b68ef854c102ae0ba55c0eb778588faa4d406932161e",
       "sizeBytes": 55337521,
-      "releaseNotes": "v9：啟動／喚醒後GPS無新回呼時自動重掛原生監聽並退避重試，尊重手動停止、定位權限及模擬模式。補上區間專用直線距離，切換／離開及GPS失效清除舊值，保留原生平均車速。沿用v8紅光門檻、大字卡片、GPS品質與內嵌更新完成MP3。同簽章可覆蓋；啟動器維持v7。實際車機恢復與距離待驗證。"
+      "releaseNotes": "v10：整合單一桌面入口，提醒設定移入主程式「更新/設定 → 跨 App 提醒設定」，保留提醒卡長按入口與原設定。沿用v9 GPS自動恢復、區間專用直線距離、原生平均車速、語音與紅光。同簽章可覆蓋；啟動器維持v7。啟動白框尚未修復，畫面操作待車機驗證。"
     },
     {
       "id": "car-launcher",
